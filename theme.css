@@ -121,7 +121,7 @@
   --message-color-hover: hsl(216,7%,18%);
   --message-color-alt: hsl(216,7%,13%);
   --attachment-color: hsl(216,7%,9%);
-  --typing-color: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(44,71,190,1) 25%, rgba(253,29,29,1) 50%, rgba(161,252,54,1) 75%, rgba(252,176,69,1) 100%));
+  --typing-color: rgba(22,23,26,0.9);
   --popout-color: #2c2f33;
   --popout-color-alt: #202225;
   --popout-header-border: rgba(255,255,255,0.125);
@@ -1766,7 +1766,6 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   margin-top: 0;
   background-color: var(--typing-color);
   transition: 200ms ease-in-out;
-  border-radius: 10px;
 }
 .form-3gdLxP .typing-2J1mQU .slowModeIcon-35Psjn {
   margin-right: 8px;
