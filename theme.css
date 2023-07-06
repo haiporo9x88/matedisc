@@ -1,10 +1,10 @@
 /*NAME: BusLiesem*/
-/*version:  4.0.0 aka Offical Version 1.0 */
+/*version:  4.0.1 aka Offical Version 1.0.1 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 5 */
+/* update court: 6 */
 
 
 /*
@@ -17,10 +17,13 @@
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css");
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/addons/custom-themes/source.css");
+@import url('https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/addons/material-you/source.css');
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
-@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css');
+@import url('https://haiporo9x88.github.io/settingsmodal/settingsmodal.css');
 @import url('https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css');
+@import url('https://dablulite.github.io/css-snippets/NitroThemesFix/import.css');
+@import url('https://dablulite.github.io/css-snippets/NoLightInDark/import.css');
 /*
 *
 *
@@ -501,6 +504,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .link-1_kTxV {
   padding: 0;
   background-color: transparent !important;
+  border-radius: 8px;
 }
 .link-1_kTxV .linkTop-1W1aK6,
 .link-1_kTxV .content-2V2neN {
@@ -597,17 +601,12 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   border-radius: var(--channel-radius);
   transition: var(--default-time) var(--default-animation) background-color;
 }
-.wrapper-NhbLHG:hover {
-  background-color: var(--menu-item-hover);
-}
-.wrapper-NhbLHG.modeSelected-3DmyhH {
-  background-color: hsla(var(--accent-hsl), var(--menu-item-select-accent-opacity));
-}
 .wrapper-NhbLHG.modeSelected-3DmyhH .icon-2W8DHg {
   color: var(--interactive-hover);
+  margin-left: 6px;
 }
 .wrapper-NhbLHG .content-2V2neN {
-  margin-left: 0;
+  margin-left: 0px;
   background-color: transparent !important;
   border-radius: var(--channel-radius);
 }
@@ -618,6 +617,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .icon-2W8DHg,
 .name-28HaxV {
   transition: var(--default-time) var(--default-animation) color;
+  margin-left: 5px;
 }
 
 .newChannel-3q3LPr {
@@ -1763,7 +1763,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .form-3gdLxP .attachedBars-2BCP3l .replyBar-1oi75v {
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 30px;
 }
 .form-3gdLxP .attachedBars-2BCP3l .separator-8ngZ3p {
   background-color: var(--main-textarea-border);
