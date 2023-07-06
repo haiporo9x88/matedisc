@@ -1,10 +1,10 @@
 /*NAME: BusLiesem*/
-/*version:  3.0.3 aka Beta 3.3*/
-/*THIS THEME'S NOT MINE, I JUST MODIFIED IT */
-/*Inspired by MaterialDiscord theme from CapnKitten#3192 and rounded style and some gradient effects*/
-/*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord + something good but im too lazy to add all urls*/
-/*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find a good thing (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 4 */
+/*version:  4.0.0 aka Offical Version 1.0 */
+/*A random stolen theme with some random addons from a random guy*/
+/*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
+/*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
+/*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
+/* update court: 5 */
 
 
 /*
@@ -19,8 +19,8 @@
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/addons/custom-themes/source.css");
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
-@import url(//dablulite.github.io/css-snippets/BetterFloatingEditor/import.css);
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css');
+@import url('https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css');
 /*
 *
 *
@@ -498,6 +498,16 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   background-color: var(--main-color);
 }
 
+.link-1_kTxV {
+  padding: 0;
+  background-color: transparent !important;
+}
+.link-1_kTxV .linkTop-1W1aK6,
+.link-1_kTxV .content-2V2neN {
+  min-height: 32px;
+  align-items: center;
+}
+
 .animatedContainer-2laTjx {
   box-shadow: none;
 }
@@ -596,7 +606,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .wrapper-NhbLHG.modeSelected-3DmyhH .icon-2W8DHg {
   color: var(--interactive-hover);
 }
-.wrapper-NhbLHG .content-1gYQeQ {
+.wrapper-NhbLHG .content-2V2neN {
   margin-left: 0;
   background-color: transparent !important;
   border-radius: var(--channel-radius);
@@ -713,6 +723,15 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *  CHANNELS LIST ICONS
  *
  */
+.children-1MGS9G:not(:empty) {
+  height: 32px;
+  gap: 8px;
+  margin-top: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+  align-items: center;
+}
+
 .iconItem-1EjiK0 {
   position: relative;
   margin: 0 0 0 10px;
@@ -9781,6 +9800,76 @@ body:active .menu-2TXYjN:not(:active) {
   background-color: var(--menu-item-hover);
 }
 
+.drawerSizingWrapper-1txdWG .contentWrapper-3vHNP2 {
+  --nav-container-padding: 4px;
+  --nav-button-height: 24px;
+  --nav-button-radius: 12px;
+  grid-template-rows: calc(var(--nav-button-height) + var(--nav-container-padding) * 2) auto;
+  grid-row-gap: 16px;
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB, .drawerSizingWrapper-1txdWG .navList-3uG4ub {
+  position: relative;
+  width: 100%;
+  padding: var(--nav-container-padding);
+  background-color: var(--popout-color-alt);
+  border-radius: calc(var(--nav-button-radius) + var(--nav-container-padding));
+  z-index: 0;
+  box-sizing: border-box;
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB:after, .drawerSizingWrapper-1txdWG .navList-3uG4ub:after {
+  position: absolute;
+  content: " ";
+  width: calc(33.3333% - var(--nav-container-padding) / 2);
+  height: var(--nav-button-height);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: var(--menu-item-select);
+  border-radius: var(--nav-button-radius);
+  z-index: -1;
+  transition: var(--default-time) var(--default-animation) transform;
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB:has([id=sticker-picker-tab].navButtonActive-1EqC5l, [id=sticker-picker-tab].navButtonActive-fwiUKp):after, .drawerSizingWrapper-1txdWG .navList-3uG4ub:has([id=sticker-picker-tab].navButtonActive-1EqC5l, [id=sticker-picker-tab].navButtonActive-fwiUKp):after {
+  transform: translateX(100%);
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB:has([id=emoji-picker-tab].navButtonActive-1EqC5l, [id=emoji-picker-tab].navButtonActive-fwiUKp):after, .drawerSizingWrapper-1txdWG .navList-3uG4ub:has([id=emoji-picker-tab].navButtonActive-1EqC5l, [id=emoji-picker-tab].navButtonActive-fwiUKp):after {
+  transform: translateX(calc(200% - var(--nav-container-padding) / 2));
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB .navItem-3McpmW, .drawerSizingWrapper-1txdWG .navList-3uG4ub .navItem-3McpmW {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0;
+  padding: 0;
+  line-height: var(--nav-button-height);
+  background-color: transparent !important;
+  color: var(--text-muted);
+}
+.drawerSizingWrapper-1txdWG .navList-YSb9UB .navItem-3McpmW:hover, .drawerSizingWrapper-1txdWG .navList-3uG4ub .navItem-3McpmW:hover, .drawerSizingWrapper-1txdWG .navList-YSb9UB .navItem-3McpmW.navButtonActive-1EqC5l, .drawerSizingWrapper-1txdWG .navList-3uG4ub .navItem-3McpmW.navButtonActive-1EqC5l, .drawerSizingWrapper-1txdWG .navList-YSb9UB .navItem-3McpmW.navButtonActive-fwiUKp, .drawerSizingWrapper-1txdWG .navList-3uG4ub .navItem-3McpmW.navButtonActive-fwiUKp {
+  color: var(--text-normal);
+}
+
+.navButtonActive-1EqC5l, .navButtonActive-fwiUKp {
+  background: none;
+}
+#gif-picker-tab-panel,
+#sticker-picker-tab-panel,
+#emoji-picker-tab-panel {
+  animation: picker-panel calc(var(--default-time) * 2) var(--default-animation);
+}
+@keyframes picker-panel {
+  from {
+    opacity: 0;
+  }
+}
+/* EMOJI PICKER -> HEADER -> SEARCH BAR */
+.container-1SX9VC {
+  background-color: var(--input-color);
+  border-radius: 16px;
+}
+.container-1SX9VC .inner-1NoIT5 {
+  padding: 0;
+}
+.container-1SX9VC .input-2FSSDe {
 /* EMOJI PICKER -> HEADER -> SEARCH BAR */
 .container-1SX9VC {
   background-color: var(--input-color);
