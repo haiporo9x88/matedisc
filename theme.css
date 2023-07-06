@@ -4,7 +4,7 @@
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 6 */
+/* update court: 7 */
 
 
 /*
@@ -14490,6 +14490,27 @@ body:active .menu-KSaHL1:not(:active) {
 .wrapper-2PSQCG>.svg-2ifYOU{
     border:3px solid violet;border-radius: 50%
 }
+#app-mount .guilds-2JjMmN {
+  background-color: transparent;
+}
+#app-mount .guilds-2JjMmN .scrollerBase-1Pkza4 {
+  background-color: rgb(0, 0, 0, var(--serverlist-brightness));
+}
+#app-mount .guilds-2JjMmN .scrollerBase-1Pkza4::-webkit-scrollbar {
+  display: none;
+}
+
+#app-mount .guilds-2JjMmN [class*=expandedFolderBackground] {
+  background: var(--foreground);
+}
+#app-mount .guilds-2JjMmN [class*=folder] {
+  background: transparent;
+}
+
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
+  background: var(--gradient);
+  background-color: transparent;
+}
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
   content: "";
   border-radius: 50%;
@@ -14501,4 +14522,27 @@ body:active .menu-KSaHL1:not(:active) {
   height: 100%;
   width: 100%;
   transition: 0.2s ease;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n.selected-1Drb7Z::before {
+  border-radius: 30%;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .homeIcon-r0w4ny {
+  display: none;
+}
+#app-mount .guilds-2JjMmN .selected-1Drb7Z .acronym-2zrAHN {
+  background: var(--foreground-double);
+}
+#app-mount .guilds-2JjMmN .acronym-2zrAHN {
+  background: var(--foreground);
+}
+#app-mount .guilds-2JjMmN .acronym-2zrAHN:hover {
+  background: var(--foreground-double);
+}
+#app-mount .guilds-2JjMmN [class*=circleIconButton] {
+  background: var(--foreground);
+  color: rgb(var(--gradient-primary));
+}
+#app-mount .guilds-2JjMmN [class*=circleIconButton].selected-ugP_am, #app-mount .guilds-2JjMmN [class*=circleIconButton]:hover {
+  background: var(--foreground-double);
+  color: var(--text-normal);
 }
