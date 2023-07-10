@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.1.2 (5.1.2) */
+/*Offical Version 2.1.3 (5.1.3) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 14 */
-/* patch note: remove server banner because rescale not as expected */
+/* update court: 15 */
+/* patch note: fix something  */
 
 /*
 *
@@ -247,6 +247,32 @@
  *	APP ELEMENTS
  *
  */
+/* Home Button (Only work if u copy and paste this shit to custom css*/
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
+  background: var(--gradient);
+  background-color: transparent;
+}
+#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background: var(--home-button-image, url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg"));
+  background-size: var(--home-button-size, cover);
+  background-position: var(--home-button-position, center);
+  background-repeat: var(--home-button-repeat, no-repeat);
+  height: 100%;
+  width: 100%;
+  transition: 0.2s ease;
+}
+ .container-1NXEtd .content-yjf30S {
+  display: flex;
+  flex-direction: column;
+  height: fit-content !important;
+}
+/* Server Banner - Remove */
+.animatedContainer-2laTjx, .content-yjf30S [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
+display:none;
+}
 * {
   font-family: var(--app-font), San Serif!important;
 }
@@ -14533,30 +14559,4 @@ body:active .menu-KSaHL1:not(:active) {
 }
 #app-mount .guilds-2JjMmN [class*=folder] {
   background: transparent;
-}
-/* Home Button (Only work if u copy and paste this shit to custom css*/
-#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
-  background: var(--gradient);
-  background-color: transparent;
-}
-#app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-  background: var(--home-button-image, url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg"));
-  background-size: var(--home-button-size, cover);
-  background-position: var(--home-button-position, center);
-  background-repeat: var(--home-button-repeat, no-repeat);
-  height: 100%;
-  width: 100%;
-  transition: 0.2s ease;
-}
- .container-1NXEtd .content-yjf30S {
-  display: flex;
-  flex-direction: column;
-  height: fit-content !important;
-}
-/* Server Banner - Remove */
-.animatedContainer-2laTjx, .content-yjf30S [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
-display:none;
 }
