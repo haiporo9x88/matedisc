@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.2.0 (5.2.0) */
+/*Offical Version 2.2.1 (5.2.1) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 21 */
-/* patch note: fix and change sth */
+/* update court: 22 */
+/* patch note: fix sth */
 
 /*
 *
@@ -1014,7 +1014,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .container-YkUktl .withTagAsButton-OsgQ9L,
 .container-YkUktl .withTagless-10ooWt {
-  min-width: 112px;
+  min-width: 0;
   margin-left: 0;
   padding-left: 0;
 }
