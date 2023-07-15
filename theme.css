@@ -1,11 +1,42 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.2.3 (5.2.3) */
+/*Offical Version 2.3.0 (5.3.0) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 24 */
-/* patch note: fix sth */
+/* update court: 25 */
+/* patch note: fix + re-enable account detail grid, re-enable scroll bar's appearance, fix user popout and add more infomations */
+
+
+/* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
+*
+* staff tag
+* role mention icon
+* view profile picture
+* uncompressed images
+* typing indicator
+* sticker emoji preview
+* spotify control
+* show all activities
+* read all noti
+* open steam link in app
+* image ultilities
+* game activity toggle
+* enhance code blocks
+* edit server & role
+* 2 click to edit
+* destiny lfg join/invite copier
+* collapsible UI
+* bug report helper
+* better role color & nsfw tag & search page & formatting redux & media player & audio player
+* activity icons
+* zeres plugin library & BDFDB
+* plugin & theme repo
+*
+*/
+
+
+
 
 /*
 *
@@ -4802,7 +4833,7 @@ div[role=radiogroup] {
   margin: 0;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(var(--scrollbar-color), 0.15) !important;
+  background: var(--scrollbar-colour) !important;
   border: 0 solid transparent !important;
   border-radius: calc(var(--scrollbar-width) / 2) !important;
 }
@@ -11453,7 +11484,7 @@ body:active .container-18GwIk:not(:active) {
   --profile-gradient-button-text-color: hsl(0,calc(var(--saturation-factor, 1)*0%),100%);
 }
 .userProfileOuterThemed-2BgJCM .banner-1YaD3N, .userProfileOuterThemed-2BgJCM .banner-3D8GgT {
-  border-radius: calc(var(--popout-radius-big) - 4px);
+  border-radius: 15px;
 }
 .userProfileOuterThemed-2BgJCM .textarea-_59yqs,
 .userProfileOuterThemed-2BgJCM .inputWrapper-2K8ds1 .input-3O04eu {
@@ -11475,15 +11506,15 @@ body:active .container-18GwIk:not(:active) {
 }
 
 .userProfileOuter-2tQwNf {
-  border-radius: var(--popout-radius-big);
+  border-radius: 15px;
 }
 
 .userProfileInner-1ngKnf {
   --input-color: var(--input-color-alt);
-  border-radius: calc(var(--popout-radius-big) - 4px);
+  border-radius: 15px;
 }
 .userProfileInner-1ngKnf:before {
-  border-radius: inherit;
+  border-radius: 15px;
 }
 .userProfileInner-1ngKnf .wrapper-3Un6-K circle {
   fill: var(--profile-avatar-border-color);
@@ -11500,7 +11531,7 @@ body:active .container-18GwIk:not(:active) {
 .userProfileInner-1ngKnf .inputWrapper-2K8ds1 .input-3O04eu {
   padding: 0 12px;
   background-color: var(--input-color);
-  border-radius: var(--input-radius);
+  border-radius: 15px;
 }
 .userProfileInner-1ngKnf .inputWrapper-2K8ds1 .input-3O04eu::-webkit-input-placeholder {
   font-family: var(--app-font);
@@ -11522,7 +11553,7 @@ body:active .container-18GwIk:not(:active) {
 .wrapper-C1y4Sz,
 .bannerNitroUpsell-2iP18z,
 .overlayBackground-2aa7wt {
-  border-radius: calc(var(--popout-radius-big) - 4px);
+  border-radius: 15px;
 }
 
 .nameTag-35jqbZ .username-3JLfHz,
@@ -11532,7 +11563,7 @@ body:active .container-18GwIk:not(:active) {
 }
 
 .banner-1YaD3N, .banner-3D8GgT {
-  border-radius: var(--popout-radius-big);
+  border-radius: 15px;
 }
 
 .profileBadges-2pItdR {
@@ -11555,7 +11586,7 @@ body:active .container-18GwIk:not(:active) {
 }
 
 .assetsLargeImage-8U5dlz {
-  border-radius: var(--card-radius-big);
+  border-radius: 15px;
 }
 .assetsLargeImage-8U5dlz.assetsLargeImageSpotify-17ME3M {
   border-radius: 50%;
@@ -11688,6 +11719,10 @@ body:active .menu-KSaHL1:not(:active) {
 .role-2TIOKu.addButton-1_dZYu .addButtonIcon-3HZ_2f, .role-3uAPnQ.addButton-1_dZYu .addButtonIcon-3HZ_2f {
   width: 18px;
   height: 18px;
+}
+.role-2TIOKu {
+  transform: translate(0);
+  border-radius: 20px;
 }
 
 .roleFlowerStar-91jU2T {
@@ -14673,6 +14708,53 @@ body:active .menu-KSaHL1:not(:active) {
   background-color: transparent;
   border-radius: 0;
 }
+.field-21XZwa {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.field-21XZwa .fieldButton-14lHvK {
+    background-color: var(--button-secondary-background);
+    border-radius: 20px;
+    -webkit-transition: background-color .17s ease,color .17s ease;
+    transition: background-color .17s ease,color .17s ease;
+}
+.field-21XZwa .fieldButton-14lHvK:hover {
+    background-color: var(--button-secondary-background-hover);
+}
+.field-21XZwa .fieldButton-14lHvK:hover > div {
+    background: none;
+}
+.field-21XZwa .fieldButton-14lHvK {
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+}
+.field-21XZwa .fieldButtonList-28BYbB {
+    gap: 5px;
+}
+.field-21XZwa::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+.field-21XZwa::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.field-21XZwa::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-auto-thumb);
+    min-height: 40px;
+}
+.field-21XZwa::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-auto-track);
+}
+.field-21XZwa::-webkit-scrollbar-thumb,
+.field-21XZwa::-webkit-scrollbar-track {
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8px;
+}
+
 
 /*
  *
@@ -15047,9 +15129,6 @@ body:active .menu-KSaHL1:not(:active) {
 #app-mount .layer-86YKbF ~ .layer-86YKbF {
 	border-radius: 20px !important;
 }
-#app-mount .userPopoutOuter-1OHwPL {
-  border-radius: 25px;
-}
 #app-mount .member-3-YXUe .layout-2DM8Md {
     border-radius: 100px;
 }
@@ -15063,10 +15142,6 @@ body:active .menu-KSaHL1:not(:active) {
 .embedFull-1HGV2S.embed-hKpSrO {
     border-left: 0;
     border-radius: 12px;
-}
-.role-2TIOKu {
-    border-radius: 70px;
-	background-color: gray;
 }
 .scroller-1Bvpku { 
     border-top-left-radius: 10px !important;
