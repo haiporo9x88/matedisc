@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.3.2 (5.3.2) */
+/*Offical Version 2.3.3 (5.3.3) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 27 */
-/* patch note: change user popout height and disable account details grid */
+/* update court: 28 */
+/* patch note: small update to test sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -14689,32 +14689,6 @@ body:active .menu-KSaHL1:not(:active) {
   bottom: 21px;
   background-color: var(--card-color-filled);
   border: 8px solid var(--card-color-filled);
-}
-.accountProfileCard-lbN7n- .background-3d_SjE {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
-}
-.accountProfileCard-lbN7n- .background-3d_SjE:before {
-  position: absolute;
-  content: " ";
-  width: calc(100% - 32px);
-  height: 1px;
-  top: 0;
-  left: 16px;
-  background-color: var(--card-border-color);
-}
-.accountProfileCard-lbN7n- .background-3d_SjE .fieldList-in8WkP {
-  margin-top: 0;
-  padding: 16px;
-}
-.accountProfileCard-lbN7n- .background-3d_SjE .fieldList-in8WkP .constrainedRow-3y91Xf .button-ejjZWC {
-  margin-left: 8px;
-}
-.accountProfileCard-lbN7n- .background-3d_SjE .fieldList-in8WkP .button-ejjZWC:not(:last-child) {
-  margin-right: 16px;
 }
 
 .settingsBanner-1eDJ5w {
