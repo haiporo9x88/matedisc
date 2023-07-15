@@ -1,15 +1,16 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.3.0 (5.3.0) */
+/*Offical Version 2.3.1 (5.3.1) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 25 */
-/* patch note: fix + re-enable account detail grid, re-enable scroll bar's appearance, fix user popout and add more infomations */
+/* update court: 26 */
+/* patch note: next big update with sth good */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
 *
+* translate
 * staff tag
 * role mention icon
 * view profile picture
@@ -492,9 +493,6 @@ body,
 .typeWindows-2-g3UY .winButton-3UMjdg:hover, .typeWindows-2-g3UY .winButton-3UMjdg:active {
   background-color: transparent;
 }
-.typeWindows-2-g3UY .winButton-3UMjdg svg {
-  display: none;
-}
 html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg:after {
   background-color: var(--window-button-inactive);
 }
@@ -572,6 +570,11 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *	CHANNELS LIST
  *
  */
+.bar-2eAyLE {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
 .sidebar-1tnWFu {
   width: 20%;
   border-radius: var(--card-radius-big) 0 0 var(--card-radius-big) !important;
@@ -599,7 +602,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   margin-left: -5px;
   padding: 0 8px;
   background-color: transparent !important;
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: visible;	
 }
 .link-1_kTxV .linkTop-1W1aK6,
@@ -808,7 +811,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 
 .userAvatar-3Hwf1F {
-  margin-left: 3px;
+  margin-left: 8px;
 }
 .userAvatar-3Hwf1F .avatar-31d8He {
   border-radius: var(--avatar-radius);
@@ -1188,6 +1191,10 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .chat-2ZfjoI.threadSidebarOpen-1LSXvU {
   border-radius: 0 var(--card-radius-big) var(--card-radius-big) 0;
+}
+.root-22AK9z {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 .noChannel-1GDIAZ {
@@ -11574,6 +11581,9 @@ body:active .container-18GwIk:not(:active) {
 .nickname-3P1RuO {
   font-size: 22px;
   font-weight: 400;
+  border: solid;
+  border-radius: 15px;
+  border-color: rebeccapurple;
 }
 
 .eyebrow-1Shfyi {
@@ -11613,7 +11623,9 @@ body:active .container-18GwIk:not(:active) {
 .divider-1QVlfF {
   display: none;
 }
-
+title-3CjiSS {
+  font-size: 16px;
+}
 /* USER POPOUT -> STATUS AREA */
 .accountProfilePopoutWrapper-3GskID {
   animation: bottom-pop-out 400ms var(--default-animation);
@@ -11670,6 +11682,11 @@ body:active .accountProfilePopoutWrapper-3GskID:not(:active) {
 
 body:active .menu-KSaHL1:not(:active) {
   opacity: 1;
+}
+.rolePill-78LFtg {
+  border: solid;
+  border-radius: 20px;
+  border-color: rgba(131,58,180,1);
 }
 
 /* USER POPOUT -> ROLES */
@@ -13816,7 +13833,6 @@ body:active .menu-KSaHL1:not(:active) {
   background-color: var(--card-color-filled);
   border: none;
   padding: 16px;
-  border-radius: var(--card-radius-big);
   border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
   border-top: none;
 }
