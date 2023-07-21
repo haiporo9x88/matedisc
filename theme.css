@@ -1,16 +1,15 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.3.5 (5.3.5) */
+/*Offical Version 2.3.6 (5.3.6) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 30 */
-/* patch note: hide new unread */
+/* update court: 31 */
+/* patch note: fix color, settings and disable custom user popout */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
 *
-* translate
 * staff tag
 * role mention icon
 * view profile picture
@@ -53,7 +52,6 @@
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
 @import url('https://haiporo9x88.github.io/settingsmodal/settingsmodal.css');
-@import url('https://haiporo9x88.github.io/customuserprofile/customuserprofile.css');
 @import url('https://haiporo9x88.github.io/accountdetailsgrid/accountdetailsgrid.css');
 @import url('https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css');
 @import url('https://dablulite.github.io/css-snippets/NoLightInDark/import.css');
@@ -4422,7 +4420,7 @@ path[d="M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88
   height: var(--input-height);
   padding: 0 12px;
   background-color: var(--input-color);
-  border-radius: 4px 4px 0 0;
+  border-radius: 20px;
   border: none;
   box-shadow: inset 0 -1px 0 0 var(--input-border-color);
   color: var(--input-text-color);
@@ -4656,10 +4654,10 @@ path[d="M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88
  *
  */
 div[role=radiogroup] {
-  background-color: var(--card-color-outlined);
   border: 1px solid var(--card-border-color);
   padding: 0;
   border-radius: var(--card-radius-big);
+  background: var(--bg-overlay-2, var(--background-secondary));
 }
 
 .item-1TA5qI {
@@ -11586,7 +11584,7 @@ body:active .container-18GwIk:not(:active) {
   font-weight: 300;
   border: solid;
   border-radius: 15px;
-  
+  border-color: hotpink;
 }
 
 .eyebrow-1Shfyi {
@@ -11743,6 +11741,7 @@ body:active .menu-KSaHL1:not(:active) {
 .role-2TIOKu {
   transform: translate(0);
   border-radius: 20px;
+  border-color: hotpink;
 }
 
 .roleFlowerStar-91jU2T {
