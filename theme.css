@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.3.8 (5.3.8) */
+/*Offical Version 2.3.9 (5.3.9) */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 33 */
-/* patch note: fix user settings profiles */
+/* update court: 34 */
+/* patch note: fix user settings profiles part 2 */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -288,6 +288,60 @@
 *
 *
 */ 
+
+/* user settings profiles */
+.customizationSection-IGy2fS {
+  --input-color: var(--input-color-alt);
+  margin-bottom: 16px;
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
+  padding-bottom: 16px;
+}
+.customizationSection-IGy2fS .title-1HgbhV {
+  margin: -16px -16px 0;
+  margin-bottom: 0;
+  padding: 16px;
+  background-color: transparent;
+  font-size: 1.25em;
+  line-height: normal;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+  opacity: 1;
+}
+.customizationSection-IGy2fS .title-1HgbhV .titleText-1IEWzs {
+  line-height: normal;
+  font-size: inherit;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+}
+.customizationSection-IGy2fS.preview-sMYs9f {
+  max-width: unset;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT {
+  margin: 0 0 16px;
+  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
+  border-width: 2px;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
+  display: none;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
+  background-color: var(--card-color-outlined);
+  border: 1px solid var(--card-border-color);
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS.preview-Z55SA3 .title-1HgbhV {
+  display: none;
+}
+.customizationSection-IGy2fS .removeButton-1xB_Ez {
+  margin-left: 16px;
+}
+
 /* Search category */
 .container-2McqkF {
   max-height: 80vh;
@@ -301,16 +355,19 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
 /* Spotify popout */
 .container-8Futzw {
   background-color: #553fd1;
   border-radius: 20px;
   box-shadow: var(--shadow-3dp);
 }
+
 /* Spotify image */
 .container-8Futzw .assetsLargeImage-2aPegH {
   border-radius: 50%;
 }
+
 /* Home Button */
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .childWrapper-1j_1ub {
   background: var(--gradient);
@@ -333,6 +390,7 @@
   flex-direction: column;
   height: fit-content !important;
 }
+
 /* Server Banner - Remove */
 .animatedContainer-2laTjx, .content-yjf30S [style="height: 84px;"], .bannerImage-ubW8K-, .animatedBannerHoverLayer-129r1v{
 display:none;
@@ -14745,59 +14803,6 @@ body:active .menu-KSaHL1:not(:active) {
  *  USER SETTINGS PROFILES
  *
  */
-	
-.customizationSection-IGy2fS {
-  --input-color: var(--input-color-alt);
-  margin-bottom: 16px;
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
-  padding-bottom: 16px;
-}
-.customizationSection-IGy2fS .title-1HgbhV {
-  margin: -16px -16px 0;
-  margin-bottom: 0;
-  padding: 16px;
-  background-color: transparent;
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-  opacity: 1;
-}
-.customizationSection-IGy2fS .title-1HgbhV .titleText-1IEWzs {
-  line-height: normal;
-  font-size: inherit;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-}
-.customizationSection-IGy2fS.preview-sMYs9f {
-  max-width: unset;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT {
-  margin: 0 0 16px;
-  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-width: 2px;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
-  display: none;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection-IGy2fS.preview-Z55SA3 .title-1HgbhV {
-  display: none;
-}
-.customizationSection-IGy2fS .removeButton-1xB_Ez {
-  margin-left: 16px;
-}
-	
 .tabBar-11FwuO .tabBarItem-MeqDhW {
   border-bottom: none;
 }
