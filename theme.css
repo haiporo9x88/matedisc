@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.3.11 (5.3.11) */
+/*Offical Version 2.3.12 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 36 */
-/* patch note: fix user popout */
+/* update court: 37 */
+/* patch note: sync sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -91,7 +91,7 @@
   --main-textarea-radius: 24px;
   --media-radius: calc(var(--message-radius) / 1.25);
   --card-radius: 8px;
-  --card-radius-big: 10px;
+  --card-radius-big: 18px;
   --button-height: 36px;
   --button-radius: calc(var(--button-height) / 2);
   --button-padding: 0 24px;
@@ -156,8 +156,8 @@
   --message-color-hover: hsl(216,7%,18%);
   --message-color-alt: hsl(216,7%,13%);
   --attachment-color: hsl(216,7%,9%);
-  --typing-color: rgba(22,23,26,0.9);
-  --popout-color: #2c2f33;
+  --typing-color: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(44,71,190,1) 25%, rgba(253,29,29,1) 50%, rgba(161,252,54,1) 75%, rgba(252,176,69,1) 100%);
+  --popout-color: #e02fba;
   --popout-color-alt: #202225;
   --popout-header-border: rgba(255,255,255,0.125);
   --separator-color: rgba(255,255,255,0.125);
