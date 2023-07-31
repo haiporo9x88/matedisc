@@ -1,11 +1,11 @@
 /*NAME: BusLiesem*/
-/*Offical Version 2.4.1 */
+/*Offical Version 2.4.2 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 41 */
-/* patch note: update more */
+/* update court: 42 */
+/* patch note: fix sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -1323,8 +1323,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   border-radius: 0 var(--card-radius-big) var(--card-radius-big) 0;
 }
 .root-22AK9z {
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: var(--bg-overlay-2);
 }
 
 .noChannel-1GDIAZ {
@@ -2280,13 +2279,9 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *  THREAD
  *
  */
-.resizeHandle-PBRzPC {
-  background: var(--main-alt);
-}
-
 .container-3XgAHv {
   background-color: var(--chat-color);
-  border-radius: var(--card-radius-big) var(--card-radius-big) 0;
+  border-radius: 0;
 }
 .container-3XgAHv.floating-3M3WeH {
   filter: drop-shadow(-8px 0 10px hsl(var(--black-500-hsl)/0.125));
