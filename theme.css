@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.0 */
+/*Offical Version 2.5.1 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 43 */
-/* patch note: add custom icons and fix sth */
+/* update court: 44 */
+/* patch note: change sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -420,7 +420,7 @@
 /* Search category */
 .container-2McqkF {
   max-height: 80vh;
-  background-color: #553fd1 !important;
+  background-color: var(--bg-overlay-4) !important;
   border-radius: 20px !important;
 }
 .container-2McqkF .option-ayUoaq {
@@ -433,7 +433,7 @@
 
 /* Spotify popout */
 .container-8Futzw {
-  background-color: #553fd1;
+  background-color: var(--bg-overlay-4);
   border-radius: 20px;
   box-shadow: var(--shadow-3dp);
 }
@@ -1854,8 +1854,8 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *
  */
 .searchResultsWrap-5RVOkx {
-  background-color: var(--main-alt);
-  border-radius: var(--popout-radius-big);
+  border-top-left-radius: var(--popout-radius-big);
+  border-bottom-left-radius: var(--popout-radius-big);
 }
 
 /* SEARCH RESULTS -> HEADER */
@@ -1877,11 +1877,13 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .searchHeaderTabList-3CZMQB .item-2GWPIy:hover:not(.disabled-1nofHP), .searchHeaderTabList-3CZMQB .item-2GWPIy.selected-1sf9UK {
   background-color: transparent;
+  border-radius:18px;
 }
 .searchHeaderTabList-3CZMQB .item-2GWPIy.selected-1sf9UK {
   position: relative;
   background-color: transparent !important;
   border: none;
+  border-radius: 18px;
 }
 .searchHeaderTabList-3CZMQB .item-2GWPIy.selected-1sf9UK:after {
   position: absolute;
@@ -11238,10 +11240,11 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
   text-transform: none;
 }
 .container-2McqkF .option-ayUoaq:after {
-  background: linear-gradient(90deg, transparent, var(--popout-color) 80%);
+  background: linear-gradient(120deg, transparent, rgba(136,39,90,1) 250%);
+  width: 50%;
 }
 .container-2McqkF .option-ayUoaq:hover:after {
-  background: linear-gradient(90deg, transparent, var(--menu-item-hover) 50%);
+    background: linear-gradient(120deg, transparent, rgba(136,39,90,1) 250%);
 }
 .container-2McqkF [aria-selected=true].option-ayUoaq {
   background: var(--menu-item-select) !important;
@@ -11389,12 +11392,12 @@ body:active .menu-2-eHMB:not(:active) {
  *
  */
 .streamPreview-I7itZ6 {
-  background-color: var(--popout-color) !important;
-  border-radius: 15px!important;
+  background-color: var(--bg-overlay-5) !important;
+  border-radius: 15px !important;
   box-shadow: var(--shadow-3dp) !important;
 }
 .streamPreview-I7itZ6 .previewContainer-35LFgt {
-  background-color: var(--popout-color-alt) !important;
+  background-color: var(--bg-overlay-5) !important;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -15058,7 +15061,9 @@ body:active .menu-KSaHL1:not(:active) {
     border-bottom-left-radius: 10px !important;
 }
 .wrapper-2PSQCG>.svg-2ifYOU{
-    border:3px solid violet;border-radius: 50%
+    border: 2px solid rgb(2, 255, 44);
+    border-inline-color: violet;
+    border-radius: 50%;
 }
 #app-mount .guilds-2JjMmN {
   background-color: transparent;
