@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.3 */
+/*Offical Version 2.5.4 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 46 */
-/* patch note: fix setting icons */
+/* update court: 47 */
+/* patch note: fix sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -420,7 +420,7 @@
 /* Search category */
 .container-2McqkF {
   max-height: 80vh;
-  background-color: var(--bg-overlay-4) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: 20px !important;
 }
 .container-2McqkF .option-ayUoaq {
@@ -1172,6 +1172,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   background-color: var(--status-picker-color) !important;
   border-radius: 4px;
   box-sizing: border-box;
+  background: var(--bg-overlay-3) !important;
 }
 .container-YkUktl .avatarWrapper-1B9FTW {
   flex-grow: 1;
@@ -2497,17 +2498,19 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *
  */
 #bd-editor-panel {
-  border-radius: var(--card-radius-big);
+  background: var(--bg-overlay-5);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   overflow: hidden;
 }
 
 #bd-editor-controls {
-  background-color: var(--card-color-filled);
+  background-color: var(--bg-overlay-5);
   border-radius: var(--card-radius-big) var(--card-radius-big) 0 0;
 }
 
 #bd-customcss-editor {
-  background-color: var(--card-color-filled);
+  background-color: var(--bg-overlay-5);
 }
 
 .monaco-editor, .monaco-editor-background,
@@ -6279,7 +6282,7 @@ div[role=radiogroup] {
  *
  */
 .applicationStore-2nk7Lo {
-  background-color: var(--chat-color);
+  background: var(--bg-overlay-2);
   border-top-right-radius: var(--card-radius-big);
 }
 .applicationStore-2nk7Lo .scroller-29cQFV {
@@ -11244,7 +11247,7 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
   width: 50%;
 }
 .container-2McqkF .option-ayUoaq:hover:after {
-    background: linear-gradient(120deg, transparent, rgba(136,39,90,1) 250%);
+  background: linear-gradient(120deg, transparent, rgba(136,39,90,1) 250%);
 }
 .container-2McqkF [aria-selected=true].option-ayUoaq {
   background: var(--menu-item-select) !important;
@@ -15035,9 +15038,8 @@ body:active .menu-KSaHL1:not(:active) {
 }
 
 .privateChannels-oVe7HL .interactiveSelected-29CP8y {
-  background-color: rebeccapurple !important;
-  color: #fff !important;
-  border-radius: 10px !important;
+  background: var(--bg-overlay-5) !important;
+  border-radius: 20px !important;
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF {
 	border-radius: 20px !important;
