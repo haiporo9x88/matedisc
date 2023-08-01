@@ -11410,12 +11410,12 @@ body:active .menu-2-eHMB:not(:active) {
  *
  */
 .streamPreview-I7itZ6 {
-  background-color: var(--bg-overlay-5) !important;
+  background: var(--bg-overlay-5) !important;
   border-radius: 15px !important;
   box-shadow: var(--shadow-3dp) !important;
 }
 .streamPreview-I7itZ6 .previewContainer-35LFgt {
-  background-color: var(--bg-overlay-5) !important;
+  background: var(--bg-overlay-5) !important;
   border-radius: 15px;
   overflow: hidden;
 }
