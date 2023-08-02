@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.10 */
+/*Offical Version 2.5.11 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 52 */
-/* patch note: add more gradient effects */
+/* update court: 53 */
+/* patch note: fix sth */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -295,8 +295,32 @@
 *
 *
 *
-*/ 
-
+*/
+/* connected voice chat + selected channel */
+.modeConnected-NrO4cP .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV {
+  background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+  animation: gradient-text 8s linear infinite;
+  background-size: 500% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+@keyframes gradient-text {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500% 0;
+    }
+}
+/* channel avatar border */
+.wrapper-2PSQCG>.svg-2ifYOU{
+    border: 2px solid rgb(235, 55, 226);
+    border-left-color: rgb(2, 255, 44);
+    border-right-color: rgb(206, 7, 67);
+    border-radius: 50%;
+    border-style: dashed double none dotted;
+}
 /* user settings profiles */
 
 .customizationSection-IGy2fS {
@@ -15205,23 +15229,7 @@ body:active .menu-KSaHL1:not(:active) {
 .modeUnread-3Cxepe .name-28HaxV, .notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV, .notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
   color: #fff !important;
 }
-.modeConnected-NrO4cP .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV {
-  background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-  animation: gradient-text 8s linear infinite;
-  background-size: 500% 100%;
-  color: transparent !important;
-  -webkit-background-clip: text;
-  z-index: 1;
-}
-@keyframes gradient-text {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 500% 0;
-    }
-}
-
+	
 .privateChannels-oVe7HL .interactiveSelected-29CP8y {
   background: var(--bg-overlay-5) !important;
   border-radius: 20px !important;
@@ -15247,13 +15255,7 @@ body:active .menu-KSaHL1:not(:active) {
     border-top-left-radius: 10px !important;
     border-bottom-left-radius: 10px !important;
 }
-.wrapper-2PSQCG>.svg-2ifYOU{
-    border: 2px solid rgb(235, 55, 226);
-    border-left-color: rgb(2, 255, 44);
-    border-right-color: rgb(206, 7, 67);
-    border-radius: 50%;
-    border-style: dashed double none dotted;
-}
+
 #app-mount .guilds-2JjMmN {
   background-color: transparent;
 }
