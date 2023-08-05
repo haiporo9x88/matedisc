@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.12 */
+/*Offical Version 2.5.13 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 54 */
-/* patch note: fix sth */
+/* update court: 55 */
+/* patch note: reduce (or remove) some gradient effects cuz of lagging and affecting the CPU performance */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -297,9 +297,16 @@
 *
 */
 /* connected voice chat + selected channel */
-.modeConnected-NrO4cP .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV {
+.modeConnected-NrO4cP .name-28HaxV, {
   background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
   animation: gradient-text 8s linear infinite;
+  background-size: 500% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  z-index: 1;
+}
+.modeSelected-3DmyhH .name-28HaxV {
+  background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
   background-size: 500% 100%;
   color: transparent !important;
   -webkit-background-clip: text;
@@ -3015,28 +3022,6 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   }
 }
   
-.container-6sXIoE::before {
-  content: "";
-  height: 24px;
-  z-index: 1;
-  width: 320px;
-  margin-left: -8px;
-  background: var(--bg-overlay-5);
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
-  animation: spotifywave 4s linear infinite;
-  animation-play-state: running;
-  animation-delay: 0s;  
-  opacity: 1;
-  border-radius: var(--popout-radius-big);
-  }
-body:not(:has(.attachButtonPlay-1ATmb5)) .container-6sXIoE::before {
-  background: var(--bg-overlay-5);
-  animation-play-state: running;
-}
-    
-body:not(:has(.attachButtonPlay-1ATmb5)) .container-6sXIoE.container-6sXIoE {
-  border-bottom: none;
-}  
 
 /* BETTERDISCORD PLUGIN -> SpotifyControls -> VENCORD*/
 #vc-spotify-player {
@@ -6904,20 +6889,12 @@ div[role=radiogroup] {
  */
 .mention.wrapper-1ZcZW-.mention.interactive {
   background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-  animation: gradient-text 8s linear infinite;
   background-size: 500% 100%;
   color: transparent !important;
   -webkit-background-clip: text;
   z-index: 1;
 }
-@keyframes gradient-text {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 500% 0;
-    }
-}
+
 
 .backgroundFlash-1X5jVs {
   border-radius: var(--message-radius);
@@ -7415,18 +7392,7 @@ div[role=radiogroup] {
  */
 .spoilerContent-32CqO- {
   background: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-  animation: gradient-text 8s linear infinite;
-  background-size: 500% 100%;
-  color: black;
-  z-index: -1;
-}
-@keyframes gradient-text {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 500% 0;
-    }
+  color: back;
 }
   
 /*
@@ -11837,52 +11803,15 @@ body:active .container-18GwIk:not(:active) {
   font-size: 22px;
   font-weight: 400;
   position: relative;
+  border: 2px solid;
+  border-color: var(--bg-gradient-citrus-sherbert-1);
   border-radius: 15px;
   background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
-  animation: gradient-text 8s linear infinite;
   background-size: 500% 100%;
   color: transparent !important;
   -webkit-background-clip: text;
 }
-@keyframes gradient-text {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 500% 0;
-    }
-}
-.userTagNoNickname-h9Bh88 span:before,
-.nickname-3P1RuO:before,
-.userTagNoNickname-h9Bh88 span:after,
-.nickname-3P1RuO:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:  conic-gradient(
-    from var(--gradient-angle),
-    var(--clr-1),
-    var(--clr-2),
-    var(--clr-3),
-    var(--clr-4),
-    var(--clr-5),
-    var(--clr-4),
-    var(--clr-3),
-    var(--clr-2),
-    var(--clr-1));
-  border-radius: inherit;
-  filter: contrast(200%);
-  animation: rotation 10s linear infinite;
-}
-@keyframes rotation {
-  0%  { --gradient-angle: 0deg;}
-  100%  { --gradient-angle: 360deg;}
-}
-.userTagNoNickname-h9Bh88 span:after,
-.nickname-3P1RuO:after {
-  filter: blur(5rem);
-}
+
 title-3CjiSS {
   font-size: 16px;
 }
