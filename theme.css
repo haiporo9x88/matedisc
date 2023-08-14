@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.16 */
+/*Offical Version 2.5.17 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 58 */
-/* patch note: re-enable server banner */
+/* update court: 59 */
+/* patch note: change sth about background, color and fix emoji picker */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -416,7 +416,7 @@
 }
 
 .profileBannerPreview-3mLIdO {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -689,7 +689,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  */
 .authBox-1HR6Ha {
   padding: 24px 24px 0;
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -824,7 +824,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   padding-bottom: 4px;
 }
 .bar-wDIGjg {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   box-shadow: var(--shadow-3dp);
 }
 .mentionsBar-DpLHCy {
@@ -1258,7 +1258,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .container-JMJRDf {
   width: calc(100% - 16px);
   margin: 0 8px 20px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -1630,7 +1630,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .scroller-3b1p7z {
   padding: 8px 0;
   padding-right: 0 !important;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius);
 }
 .scroller-3b1p7z .memberListHeader-1V_jWz {
@@ -1687,7 +1687,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 
 /* DIRECT MESSAGES -> VIDEO CALL REACTIONS */
 .container-3a5mk- {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -1784,7 +1784,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
  *
  */
 .toolbar-37BrJ5 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: 16px;
   box-shadow: var(--shadow-3dp);
   overflow: hidden;
@@ -1812,7 +1812,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   padding: 4px 30px 10px 0 !important;
 }
 .bf-toolbar:before {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: 19px !important;
   box-shadow: var(--shadow-3dp);
 }
@@ -2425,7 +2425,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .bd-select .bd-select-options {
   padding: 8px 0;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius);
   border: none;
   box-shadow: var(--shadow-3dp);
@@ -2607,6 +2607,21 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 
 /*
  *
+ *  BETTERDISCORD PLUGIN -> sticker emoji preview
+ *
+ */
+
+.stickersPreview {
+  border-radius: 15px;
+}
+.stickersPreview img {
+  border-radius: 15px;
+  width: 95%;
+  height: 95%;
+}
+
+/*
+ *
  *  BETTERDISCORD PLUGIN -> ChannelDms
  *
  */
@@ -2649,7 +2664,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   border-radius: var(--popout-radius-big) !important;
 }
 .ChannelDms-channelpopout-popout .ChannelDms-channelpopout-collapseButton {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   box-shadow: var(--shadow-3dp);
 }
 .ChannelDms-channelpopout-popout .ChannelDms-channelpopout-header {
@@ -2875,7 +2890,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   border: none !important;
 }
 #permissions-modal-wrapper .header {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   padding: 16px !important;
   box-shadow: none !important;
   border-bottom: 1px solid var(--popout-header-border);
@@ -2885,7 +2900,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   color: var(--header-primary) !important;
 }
 #permissions-modal-wrapper .modal-body {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
 }
 #permissions-modal-wrapper .role-side {
   padding: 16px 0 16px 16px !important;
@@ -2979,7 +2994,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 
 .wrapper .controls {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: 17px !important;
 }
 .wrapper .controls .caret {
@@ -3121,7 +3136,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 
 .StatusEverywhere-avatar-userPopout {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border: none !important;
 }
 /*
@@ -3286,7 +3301,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 
 /* VENCORD SETTINGS -> NOTIFICATION */
 .vc-notification-root {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -3367,7 +3382,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 .vc-rdb-view .formText-2UzJT0 {
   padding: 8px !important;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--review-radius);
 }
 
@@ -3622,7 +3637,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 
 .container-3kfp0r {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -3836,7 +3851,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   color: var(--accent-text-color--material-you);
 }
 .container-JhuCwn .popoutContainer-26yHc8 .popout-2vZMlk {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   border: none;
@@ -5097,7 +5112,7 @@ div[role=radiogroup] {
 
 .popout-15UxD6 {
   margin: 4px 0;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius) !important;
   border: none;
   box-shadow: var(--shadow-3dp);
@@ -5239,7 +5254,7 @@ div[role=radiogroup] {
  *
  */
 .loadingPopout-1tyQMM {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   box-shadow: var(--shadow-3dp);
   border-radius: 24px;
 }
@@ -5504,7 +5519,7 @@ div[role=radiogroup] {
 .subscribeTooltipWrapper-3ipXtC,
 .upsellTooltipWrapper-1wqikQ,
 .container-5N5x2A {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -5579,7 +5594,7 @@ div[role=radiogroup] {
 }
 
 .toast-q3Y4wI {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 
 .toast-g4bfgI,
@@ -5603,7 +5618,7 @@ div[role=radiogroup] {
 }
 
 .toast-g4bfgI {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -5614,7 +5629,7 @@ div[role=radiogroup] {
 .qwert-toast {
   width: 30vw;
   max-width: 30vw;
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   backdrop-filter: none;
 }
 .qwert-toast + .qwert-toast {
@@ -6722,7 +6737,7 @@ div[role=radiogroup] {
 
 /* ATTACHMENTS -> EMOJI SELLUP */
 .popoutContainer-2wbmiM {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -6748,7 +6763,7 @@ div[role=radiogroup] {
   display: none;
 }
 .container-1ZA19X .containerBackground-Ang24O {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   border: none;
@@ -7255,7 +7270,7 @@ div[role=radiogroup] {
   background-color: var(--attachment-color);
 }
 .popout-VbwYm1 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -7812,7 +7827,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 }
 
 .input-m1-Y7Q {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 
 .skip-2hTIXL {
@@ -8022,7 +8037,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  */
 .oauth2Wrapper-p_8bbd {
   min-height: 100px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   overflow: hidden;
@@ -8295,7 +8310,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .root-1CAIjD {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -8494,7 +8509,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 }
 
 .content-te-TUT {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -8505,7 +8520,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .premiumSkuSelect-2K_31N {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -8682,7 +8697,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  */
 .quickswitcher-pKcM9U {
   padding: 0;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -8907,7 +8922,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 }
 
 .contentWrapper-3oy4Xo {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) 0 0 var(--popout-radius-big);
 }
 .contentWrapper-3oy4Xo .heading-xl-semibold-3E1dYv {
@@ -8932,7 +8947,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 }
 
 .prompt-R8SyL4 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -9041,7 +9056,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -9731,7 +9746,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 
 .innerWrapper-GblfR9 {
   padding: 12px 24px 12px 12px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   box-shadow: var(--shadow-3dp);
 }
 .innerWrapper-GblfR9:before, .innerWrapper-GblfR9:after {
@@ -9803,7 +9818,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 }
 
 .perkPreviewImage-2DwY44 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -10071,7 +10086,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .addGamePopout-2SKNIV {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -10085,7 +10100,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .autocomplete-3NRXG8 {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -10147,12 +10162,12 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
 
 /* AUTOCOMPLETE -> ROLES POPOUT */
 .container-1S70rv {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
 .container-1S70rv .autocompleteArrow-jJE9TQ {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 .container-1S70rv .header-3i_Csh {
   background-color: transparent;
@@ -10178,7 +10193,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
   display: none;
 }
 .container-1S70rv .autocompleteArrow-jJE9TQ {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 .container-1S70rv .header-3i_Csh {
   padding: 0 16px;
@@ -10220,7 +10235,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  */
 .calendarPicker-sDhzdi .react-datepicker {
   padding: 16px;
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -10302,7 +10317,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .customColorPicker-C_jddW {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
   border: none !important;
@@ -10333,7 +10348,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .container-1ILvLB {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -10353,7 +10368,7 @@ body:active .root-1CAIjD .container-18GwIk:not(:active) {
  *
  */
 .menu-2TXYjN {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius);
   box-shadow: var(--shadow-3dp);
   animation: opacity 100ms ease, open-context-menu 300ms var(--default-animation);
@@ -10504,7 +10519,7 @@ body:active .menu-2TXYjN:not(:active) {
 
 .contentWrapper-3vHNP2, .contentWrapper-2f9yME,
 .emojiPicker-6YCk8a {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -10518,7 +10533,7 @@ body:active .menu-2TXYjN:not(:active) {
 .header-uVCAlo,
 .header-2TLOnc {
   padding: 16px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big) var(--popout-radius-big) 0 0;
   border-bottom: 1px solid var(--card-border-color);
   box-shadow: none !important;
@@ -10539,7 +10554,7 @@ body:active .menu-2TXYjN:not(:active) {
 }
 
 .diversitySelectorOptions-3DhNYs {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: 16px;
   border: none;
   box-shadow: var(--shadow-3dp);
@@ -10565,7 +10580,7 @@ body:active .menu-2TXYjN:not(:active) {
   position: relative;
   width: 100%;
   padding: var(--nav-container-padding);
-  background-color: var(--popout-color-alt);
+  background: var(--bg-overlay-1);
   border-radius: calc(var(--nav-button-radius) + var(--nav-container-padding));
   z-index: 0;
   box-sizing: border-box;
@@ -10627,7 +10642,7 @@ body:active .menu-2TXYjN:not(:active) {
 
 /* EMOJI PICKER -> HEADER -> SEARCH BAR */
 .container-1SX9VC {
-  background-color: var(--input-color);
+  background: var(--bg-overlay-1);
   border-radius: 16px;
 }
 .container-1SX9VC .inner-1NoIT5 {
@@ -10641,14 +10656,16 @@ body:active .menu-2TXYjN:not(:active) {
 
 /* EMOJI PICKER -> EMOJIS */
 .wrapper-2nNnyW {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 .wrapper-2nNnyW .banner-25RWjr {
   border-radius: var(--card-radius-big);
 }
 
 .wrapper-1NNaWG {
-  background-color: var(--emoji-category-header);
+  background: var(--bg-overlay-1);
+  border-radius: var(--card-radius-big);
+  width: 99%;
 }
 .wrapper-1NNaWG .headerLabel-1g790w {
   font-size: 14px;
@@ -10679,7 +10696,7 @@ body:active .menu-2TXYjN:not(:active) {
 }
 
 .inspector-DFKXwB {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-top: 1px solid var(--card-border-color);
 }
 .inspector-DFKXwB .guildIcon-2SUGiq {
@@ -10691,6 +10708,11 @@ body:active .menu-2TXYjN:not(:active) {
   text-transform: none;
 }
 
+/* EMOJI PICKER -> SERVER EMOJI */
+.none-1rXy4P {
+  background: var(--bg-overlay-1);
+}
+
 /* EMOJI PICKER -> CATEGORIES */
 .categoryList-2qRrlj {
   border-radius: 0 0 0 var(--popout-radius-big);
@@ -10700,7 +10722,7 @@ body:active .menu-2TXYjN:not(:active) {
 }
 .categoryList-2qRrlj .unicodeShortcut-3N8oDe {
   height: 47px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-top: 1px solid var(--card-border-color);
 }
 
@@ -10813,7 +10835,7 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
 .picker-Jz0w5j .header-2jK3d7 {
   height: unset;
   padding: 8px 16px;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-top-left-radius: calc(var(--popout-radius-big) / 1.25);
   border-top-right-radius: calc(var(--popout-radius-big) / 1.25);
   border-bottom: 1px solid var(--card-border-color);
@@ -10885,7 +10907,7 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
  *
  */
 .guildPopout-G6M0fK {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -10893,7 +10915,7 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
   mask: none !important;
 }
 .guildPopout-G6M0fK .iconMask-1lJhcS {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
 }
 .guildPopout-G6M0fK .iconMask-1lJhcS,
 .guildPopout-G6M0fK .avatar-2slV0S {
@@ -10909,11 +10931,11 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
   text-transform: none;
 }
 .footer-3YL3ds .emojiCounter-tx3ftR {
-  background-color: var(--popout-color-alt);
+  background: var(--bg-overlay-1);
 }
 
 .container-2dXT_2 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -10924,7 +10946,7 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
  *
  */
 .root-1e2tfc {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -10964,7 +10986,7 @@ body:active .contentWrapper-3vHNP2:not(:active), body:active .contentWrapper-2f9
  */
 .container-2kTWmC {
   padding: 0;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius);
   border: none;
   box-shadow: var(--shadow-3dp);
@@ -11006,7 +11028,7 @@ body:active .container-2kTWmC:not(:active) {
 .messagesPopoutWrap-3zryHW,
 .recentMentionsPopout-2bI1ZN {
   max-height: 80vh !important;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   animation: top-pop-out 400ms var(--default-animation);
@@ -11241,7 +11263,7 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
  *
  */
 .noiseCancellationPopout-2-e5Xz {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: 15px;
   box-shadow: var(--shadow-3dp);
 }
@@ -11255,7 +11277,7 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
  *
  */
 .pictureInPictureVideo-2puO2Q {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -11267,7 +11289,7 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
  */
 .regionSelectPopout-3sEzVB {
   padding: 8px 0;
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius);
   box-shadow: var(--shadow-3dp);
 }
@@ -11292,7 +11314,7 @@ body:active .messagesPopoutWrap-3zryHW:not(:active) {
  *
  */
 .container-3ssFyj {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -11372,13 +11394,13 @@ body:active .container-2McqkF:not(:active) {
  *
  */
 .picker-20lcBA {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
 
 .premiumPromo-1eKAIB {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
 }
 
@@ -11490,7 +11512,7 @@ body:active .menu-2-eHMB:not(:active) {
   left: 0;
   right: 0;
   margin: 0 auto;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   border: none;
@@ -11556,7 +11578,7 @@ body:active .menu-2-eHMB:not(:active) {
 .container-18GwIk {
   min-height: 200px;
   max-height: 80vh;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   animation: top-pop-out 400ms var(--default-animation);
@@ -11644,7 +11666,7 @@ body:active .container-18GwIk:not(:active) {
  */
 .popout-TdhJ6Z {
   padding: 0;
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
 }
@@ -11690,7 +11712,7 @@ body:active .container-18GwIk:not(:active) {
   --profile-gradient-primary-color: var(--bg-gradient-cotton-candy-2);
   --profile-gradient-secondary-color: var(--bg-gradient-citrus-sherbert-1);
   --profile-avatar-border-color: var(--popout-color);
-  --profile-body-background-color: var(--popout-color-alt);
+  --profile-body-background: var(--bg-overlay-1);
   --profile-gradient-button-color: hsl(var(--accent-hsl--material-you));
   --profile-gradient-button-text-color: var(--accent-text-color--material-you);
 }
@@ -11902,7 +11924,7 @@ body:active .accountProfilePopoutWrapper-3GskID:not(:active) {
 }
 
 .connectionsContainer-3MmgH3 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: calc(var(--popout-radius-big) - 4px);
   border: none;
 }
@@ -12482,7 +12504,7 @@ body:active .menu-KSaHL1:not(:active) {
 
 .container-20TyK0 {
   padding: 8px 8px 8px 16px;
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: 4px;
   box-shadow: var(--shadow-2dp) !important;
 }
@@ -12826,7 +12848,7 @@ body:active .menu-KSaHL1:not(:active) {
 }
 
 .resultsList-2Bp-2_ {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
   border: none;
@@ -13061,7 +13083,7 @@ body:active .menu-KSaHL1:not(:active) {
 
 /* SERVER COMMUNITY ONBOARDING -> NAVIGATION BANNER */
 .container-3azaUr {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: 4px;
   box-shadow: var(--shadow-2dp);
 }
@@ -13076,7 +13098,7 @@ body:active .menu-KSaHL1:not(:active) {
 }
 
 .educationUpsell-2MjLj5 {
-  background-color: var(--popout-color);
+  background: var(--bg-overlay-4);
   border-radius: var(--popout-radius-big);
 }
 .educationUpsell-2MjLj5 .educationUpsellArrow-37KrJN {
