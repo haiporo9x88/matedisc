@@ -1,11 +1,11 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.18 */
+/*Offical Version 2.5.19 */
 /*A random stolen theme with some random addons from a random guy*/
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 /*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update court: 60 */
-/* patch note: remove some gradient effects */
+/* update court: 61 */
+/* patch note: fix sth*/
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -5083,9 +5083,6 @@ div[role=radiogroup] {
 .select-Zz0IcO.multi-2vPqc4 > .multi-2vPqc4 {
   min-height: inherit;
 }
-.select-Zz0IcO.lookFilled-GPyucw {
-  background-color: var(--input-color);
-}
 .select-Zz0IcO .searchInput-2-KiNf::-webkit-input-placeholder {
   font-family: var(--app-font);
   color: var(--input-placeholder-color);
@@ -5112,6 +5109,7 @@ div[role=radiogroup] {
 .popout-15UxD6 .option-Uc12mm {
   color: var(--menu-item-text-color);
   transition: var(--default-time) var(--default-animation) background-color;
+  background: var(--bg-overlay-4);
 }
 .popout-15UxD6 .option-Uc12mm:hover {
   background-color: var(--menu-item-hover) !important;
@@ -14460,6 +14458,10 @@ body:active .menu-KSaHL1:not(:active) {
  *  USER SETTINGS BILLING
  *
  */
+.paymentNote-3dcb-Z {
+  background-color: transparent;
+}
+
 .paymentSourceRow-1z8x7Z {
   background-color: var(--card-color-filled);
   border: none;
@@ -14478,9 +14480,11 @@ body:active .menu-KSaHL1:not(:active) {
 }
 .paymentPane-ut5qKZ .bottomDivider-ZmTm-j {
   border: none;
+  background: var(--bg-overlay-4);
 }
 .paymentPane-ut5qKZ .pageActions-1crTQL {
   padding: 16px 0;
+  background: var(--bg-overlay-4);
 }
 
 .paymentRow-1HKOLu:not(.payment-2bOh4k) {
@@ -14502,7 +14506,7 @@ body:active .menu-KSaHL1:not(:active) {
 }
 .paginator-1eqD2g .expandedInfo-1W31i3 {
   --card-color-filled: var(--card-color-alt);
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-2);
   border: none;
   padding: 16px;
   border-radius: var(--card-radius-big);
@@ -14949,6 +14953,55 @@ body:active .menu-KSaHL1:not(:active) {
 
 /*
  *
+ *  USER SETTINGS FAMILY CENTRE
+ *
+ */
+
+ /* USER SETTINGS FAMILY CENTRE - Activity */
+.container-2WMFjc {
+  background: var(--bg-overlay-4);
+}
+.container-jV-A82 {
+  background: var(--bg-overlay-4);
+}
+.container-1iKw09 {
+  background: var(--bg-overlay-4);
+}
+.row-XYkFDK {
+  background: var(--bg-overlay-2);
+  border-radius: 15px;
+}
+
+/* USER SETTINGS FAMILY CENTRE - Activity */
+.box-3QCU9H {
+  background: var(--bg-overlay-4);
+}
+
+/*
+ *
+ *  USER SETTINGS CLIPS
+ *
+ */
+.info-1oGfsf {
+  border-radius: 18px;
+}
+.select-Zz0IcO.lookFilled-GPyucw{
+  background: var(--bg-overlay-6);
+}
+.container-30qY7E .input-3MU9bJ {
+  background: var(--bg-overlay-6);
+  border-radius: var(--card-radius-big);
+}
+.layout-Zs52SM {
+    background: var(--bg-overlay-4);
+    border-radius: var(--card-radius-big);
+}
+.input-3O04eu {
+    background: var(--bg-overlay-6);
+}
+
+/*
+ *
  *  USER SETTINGS NITRO
  *
  */
@@ -14963,6 +15016,11 @@ body:active .menu-KSaHL1:not(:active) {
   color: var(--button-text-color);
 }
 
+.giftCard-2du1Ac {
+    background: var(--bg-overlay-4);
+    border-radius: var(--card-radius-big);
+}
+
 /* USER SETTINGS -> NITRO -> SERVER BOOST */
 .gradient-ICI49D {
   border-radius: 20px;
@@ -14973,15 +15031,30 @@ body:active .menu-KSaHL1:not(:active) {
 .wrapper-32LHXp {
   margin-top: 30px;
 }
+.boostContainer-RzXAwu {
+  background: var(--bg-overlay-4);
+}
 .guildContainer-o60hpj,
 .wrapper-3htY7x {
-  background-color: rebeccapurple;
+  background: var(--bg-overlay-4);
 }
 .wrapper-3ViBpj {
   border-radius: 20px;
 }
 .wrapper-3ViBpj .card-2ZCHT- {
   border-radius: 20px;
+}
+.appliedBoostContainer-1b4KCm, .guildContainer-uf1uYk {
+  background: var(--bg-overlay-6);
+  border-radius: var(--card-radius-big);
+  border: 1px solid rebeccapurple;
+}
+.recommendedServerCard-3f-92z {
+  border-radius: var(--card-radius-big);
+}
+.copy-1hP6AT, 
+.wrapper-3htY7x {
+  border-radius: var(--card-radius-big);
 }
 
 /* USER SETTINGS PROFILES -> TRY OUT NITRO SECTION */
@@ -15008,7 +15081,6 @@ body:active .menu-KSaHL1:not(:active) {
   background: var(--card-color-filled);
   border-radius: var(--card-radius-big);
 }
-
 /*
  *
  *  USER SETTINGS SERVER BOOST
@@ -15064,14 +15136,45 @@ body:active .menu-KSaHL1:not(:active) {
 
 /*
  *
+ *  USER SETTINGS SUBSCRIPTIONS
+ *
+ */
+.promotionCard-mo7ClH, .detailsBlock-24pLFz, .descriptionBox-SKGNgB, .dropsHelpText-1HyiYF {
+    background: var(--bg-overlay-4);
+}
+
+/*
+ *
+ *  USER SETTINGS GIFT INVENTORY
+ *
+ */
+.promotionIcon-1YW8yh {
+  border-radius: 50%;
+}
+
+/*
+ *
  *  USER SETTINGS VOICE AND VIDEO
  *
  */
 .cameraWrapper-nG8dpo {
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-4);
   border: none;
   padding: 0;
   border-radius: var(--card-radius-big);
+}
+
+.select-Zz0IcO.lookFilled-GPyucw {
+  background: var(--bg-overlay-4);
+}
+
+.soundButtonSettingContainer-3G4JEB {
+    background: var(--bg-overlay-4);
+    border-radius: var(--card-radius-big);
+}
+
+.horizontal-112GEH>.flex-2S1XBF:first-child, .horizontal-112GEH>.flexChild-3PzYmX:first-child {
+  margin-left: 10px;
 }
 
 /*
