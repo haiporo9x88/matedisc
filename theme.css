@@ -1,11 +1,10 @@
 /*NAME: Quang Bus Liesem*/
-/*Offical Version 2.5.21 */
-/*A random stolen theme with some random addons from a random guy*/
+/*Offical Version 2.6.0 */
+
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
-/*Update: Every Weekend (̶̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶) or I find some good things or fix sth (̶a̶n̶d̶ ̶y̶e̶a̶,̶ ̶i̶f̶ ̶i̶m̶ ̶n̶o̶t̶ ̶l̶a̶z̶y̶ ̶a̶g̶a̶i̶n̶) */
-/* update patch: 63 */
-/* patch note: remove HorizontalServerList */
+
+/* patch note: just a stable patch */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -25,7 +24,7 @@
 * enhance code blocks
 * edit server & role
 * 2 click to edit
-* destiny lfg join/invite copier
+* destiny lfg join/invite copier (will affect text formatting and make it doesnt work)
 * collapsible UI
 * bug report helper
 * better role color & nsfw tag & search page & formatting redux & media player & audio player
@@ -57,7 +56,6 @@
 @import url('https://dablulite.github.io/css-snippets/NoLightInDark/import.css');
 @import url('https://haiporo9x88.github.io/customuserprofile/customuserprofile.css');
 @import url('https://haiporo9x88.github.io/customicons/channelicons.css');
-@import url('https://haiporo9x88.github.io/customicons/settingicons.css');
 /*
 *
 *
@@ -295,6 +293,34 @@
 *
 *
 */
+
+/* user settings icon animation*/
+.button-12Fmur:nth-last-child(1):hover
+  path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"] {
+  animation: Settings 1s;
+  transform-origin: center;
+}
+.button-12Fmur:nth-last-child(1)
+  path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"] {
+  animation: Settings2 1s;
+  transform-origin: center;
+}
+@keyframes Settings {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes Settings2 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 /* connected voice chat + selected channel + channel header*/
 .modeConnected-NrO4cP .name-28HaxV {
   background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
@@ -588,11 +614,11 @@ body,
   height: 22px;
 }
 .wordmark-2u86JB.wordmarkWindows-2dq6rw:before {
-  content: "Bus";
+  content: "Quang ";
   font-weight: 700;
 }
 .wordmark-2u86JB.wordmarkWindows-2dq6rw:after {
-  content: "Liesem";
+  content: "BusLiesem";
   font-weight: 700;
 }
 .wordmark-2u86JB.wordmarkWindows-2dq6rw svg {
@@ -605,7 +631,7 @@ body,
 }
 .typeWindows-2-g3UY .winButton-3UMjdg {
   height: var(--window-title-bar);
-  top: 0;
+  top: -1px;
 }
 .typeWindows-2-g3UY .winButton-3UMjdg:before {
   position: absolute;
@@ -752,7 +778,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 }
 
 .sidebar-1tnWFu {
-  width: 20%;
+  width: 348px;
   border-radius: var(--card-radius-big) 0 0 var(--card-radius-big) !important;
   overflow: hidden;
 }
@@ -3423,6 +3449,8 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 
 .mainCard-3KBsBI {
   border: none;
+  border-radius: var(--card-radius-big);
+  background: var(--bg-overlay-4);
 }
 
 .header-1Uy0p6 {
@@ -3438,7 +3466,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .matchingPostsRow-2IiEQ1 {
   margin-top: -24px;
   padding-top: 24px;
-  background-color: var(--input-color);
+  background: var(--bg-overlay-6);
   border-radius: 0 0 24px 24px;
 }
 
@@ -3484,7 +3512,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 /* FORUM -> GET STARTED */
 .container-2_J666 {
   margin-top: 16px;
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-4);
   border: none;
   padding: 0;
   border-radius: var(--card-radius-big);
@@ -3505,7 +3533,7 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .container-2_J666 .checklist-3XWUt6 {
   --card-color-filled: var(--card-color-alt);
   margin: 16px;
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-5);
   border: none;
   padding: 0;
   border-radius: var(--card-radius-big);
@@ -3868,8 +3896,8 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .container-JhuCwn .channelTextAreaInner-2_mflx {
   min-height: 68px;
   padding: 6px 12px;
-  background-color: var(--card-color-filled);
-  border-radius: 19px;
+  background: var(--bg-overlay-6);
+  border-radius: 15px;
   color: var(--input-text-color);
 }
 .container-JhuCwn .channelTextAreaInner-2_mflx::-webkit-input-placeholder {
@@ -3886,6 +3914,13 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   margin-top: 8px;
 }
 
+.container-JhuCwn:not(.collapsed-23aTv6) .prefixElement-1U4XhR svg {
+  margin-left: -20px;
+}
+
+.header-1Uy0p6 {
+  background: var(--bg-overlay-4);
+}
 /*
  *
  *  FORUM POSTS
@@ -4036,6 +4071,10 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
 .box-2iMsQm:after {
   left: 48px;
   border-top-color: var(--message-color);
+}
+
+.container-q2_DnH.isOpen-2Gyel_ {
+  background: var(--bg-overlay-4);
 }
 
 /*
@@ -4624,12 +4663,13 @@ path[d="M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88
 .input-3O04eu {
   height: var(--input-height);
   padding: 0 12px;
-  background-color: var(--input-color);
+  background: var(--bg-overlay-6);
   border-radius: 20px;
   border: none;
   box-shadow: inset 0 -1px 0 0 var(--input-border-color);
   color: var(--input-text-color);
   transition: var(--default-time) var(--default-animation) box-shadow;
+  text-align: center;
 }
 .input-3O04eu:focus {
   box-shadow: inset 0 -2px 0 0 hsl(var(--accent-hsl--material-you));
@@ -12406,39 +12446,6 @@ body:active .menu-KSaHL1:not(:active) {
 
 /*
  *
- *  SIDEBAR ICONS
- *
- */
-/*%settingsSidebar {
-    %tabBarItem {
-        display: flex;
-        gap: 8px;
-        padding-left: 12px;
-
-        &:before {
-    		position: relative;
-    		content: " ";
-    		width: 20px;
-    		height: 20px;
-    		top: 0;
-    		bottom: 0;
-    		margin: auto 0;
-    		background-repeat: no-repeat;
-    		background-position: center;
-    		opacity: 0.8;
-    	}
-
-        img {
-            display: none;
-        }
-    }
-}
-
-%settingsTabBarItemContainer {
-    width: 100%;
-}*/
-/*
- *
  *  USER SETTINGS
  *
  */
@@ -15003,9 +15010,6 @@ body:active .menu-KSaHL1:not(:active) {
 .layout-Zs52SM {
     background: var(--bg-overlay-4);
     border-radius: var(--card-radius-big);
-}
-.input-3O04eu {
-    background: var(--bg-overlay-6);
 }
 
 /*
