@@ -1,10 +1,8 @@
-/*NAME: Quang Bus Liesem*/
-/*Offical Version 2.6.0 */
-
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* patch note: just a stable patch */
+/*Offical Version 2.6.1 */
+/* patch note: fix channel list icons hover */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -1190,13 +1188,13 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   border-radius: 14px;
   overflow: hidden;
 }
-.panels-3wFtMD .button-12Fmur {
+.panels-3wFtMD .button-12Fmur:hover {
+  background-color: transparent !important;
+}
+.panels-3wFtMD .button-12Fmur.enabled-9OeuTA {
   position: relative;
 }
-.panels-3wFtMD .button-12Fmur:hover {
-  background-color: transparent;
-}
-.panels-3wFtMD .button-12Fmur:after {
+.panels-3wFtMD .button-12Fmur.enabled-9OeuTA:after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -1211,12 +1209,12 @@ html:not(.app-focused) .typeWindows-2-g3UY .winButton-3UMjdg.winButtonMinMax-3Rs
   transition: 300ms ease;
   z-index: 4;
 }
-.panels-3wFtMD .button-12Fmur:hover:after {
+.panels-3wFtMD .button-12Fmur.enabled-9OeuTA:hover:after {
   opacity: 1;
   transform: scale(1);
   animation: scale 150ms var(--default-animation), opacity 150ms ease;
 }
-.panels-3wFtMD .button-12Fmur:active:after {
+.panels-3wFtMD .button-12Fmur.enabled-9OeuTA:active:after {
   background-color: hsla(var(--md-ripple-color), 0.2);
 }
 
