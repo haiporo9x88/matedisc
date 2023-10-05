@@ -1,7 +1,7 @@
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 2.6.2a */
+/*Offical Version 2.6.2b */
 /* patch note: try to fix user settings */
 
 
@@ -123,8 +123,6 @@
   --window-button-max: #00ca4e;
   --window-button-close: #ff605c;
   --code-font: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
-  --settingsmodalwidth: 1360px;
-  --settingsmodalheight: 80vh;
   --HSL-server-icon-size: 42px;
   --HSL-server-spacing: 20px;
   --home-button-image: url('https://i.imgur.com/eWt5Nzm.gif');
@@ -407,65 +405,6 @@
   overflow: hidden;
 }
 
-.container-5BK5-N {
-  border-radius: var(--card-radius-big);
-}
-
-.customizationSection-IGy2fS {
-  --input-color: var(--input-color-alt);
-  margin-bottom: 16px;
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
-  padding-bottom: 16px;
-}
-.customizationSection-IGy2fS.hideDivider-eJbzZn {
-  padding-bottom: 16px;
-}
-.customizationSection-IGy2fS.preview-sMYs9f {
-  max-width: unset;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT {
-  margin: 0 0 16px;
-  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-width: 2px;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
-  display: none;
-}
-.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection-IGy2fS.preview-Z55SA3 .title-1HgbhV {
-  display: none;
-}
-.customizationSection-IGy2fS .title-1HgbhV {
-  margin: -16px -16px 0;
-  margin-bottom: 0;
-  padding: 16px;
-  background-color: transparent;
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-  opacity: 1;
-}
-.customizationSection-IGy2fS .title-1HgbhV .titleText-1IEWzs {
-  line-height: normal;
-  font-size: inherit;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-}
-.customizationSection-IGy2fS .removeButton-1xB_Ez {
-  margin-left: 16px;
-}
-
 .customizationSectionBorder-2RAJep {
   margin: -16px;
   background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
@@ -628,18 +567,6 @@ body,
 
 .platform-win .bg-1QIAus {
   top: calc((var(--window-title-bar) + 4px) * -1);
-}
-
-.layers-OrUESM {
-  z-index: 1001;
-}
-
-.layer-86YKbF {
-  z-index: 1002;
-}
-
-.pictureInPicture-1GQX91 {
-  z-index: 1002;
 }
 
 .anchor-1MIwyf,
