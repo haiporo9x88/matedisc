@@ -1,8 +1,8 @@
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 2.6.1 */
-/* patch note: fix channel list icons hover */
+/*Offical Version 2.6.2 */
+/* patch note: fix some bugs but a few issues still exist */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -86,7 +86,7 @@
   --main-textarea-color: var(--input-color);
   --main-textarea-border: var(--input-border-color);
   --main-textarea-radius: 24px;
-  --media-radius: calc(var(--message-radius) / 1.25);
+  --media-radius: calc(var(--message-radius) / 1.65);
   --card-radius: 8px;
   --card-radius-big: 18px;
   --button-height: 36px;
@@ -124,7 +124,7 @@
   --window-button-max: #00ca4e;
   --window-button-close: #ff605c;
   --code-font: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
-  --settingsmodalwidth: 1060px;
+  --settingsmodalwidth: 1360px;
   --settingsmodalheight: 80vh;
   --HSL-server-icon-size: 42px;
   --HSL-server-spacing: 20px;
@@ -407,7 +407,66 @@
 .upsellOverlayContainer-3NMgTS {
   overflow: hidden;
 }
-	
+
+.container-5BK5-N {
+  border-radius: var(--card-radius-big);
+}
+
+.customizationSection-IGy2fS {
+  --input-color: var(--input-color-alt);
+  margin-bottom: 16px;
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
+  padding-bottom: 16px;
+}
+.customizationSection-IGy2fS.hideDivider-eJbzZn {
+  padding-bottom: 16px;
+}
+.customizationSection-IGy2fS.preview-sMYs9f {
+  max-width: unset;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT {
+  margin: 0 0 16px;
+  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
+  border-width: 2px;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
+  display: none;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
+  background-color: var(--card-color-outlined);
+  border: 1px solid var(--card-border-color);
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS.preview-Z55SA3 .title-1HgbhV {
+  display: none;
+}
+.customizationSection-IGy2fS .title-1HgbhV {
+  margin: -16px -16px 0;
+  margin-bottom: 0;
+  padding: 16px;
+  background-color: transparent;
+  font-size: 1.25em;
+  line-height: normal;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+  opacity: 1;
+}
+.customizationSection-IGy2fS .title-1HgbhV .titleText-1IEWzs {
+  line-height: normal;
+  font-size: inherit;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+}
+.customizationSection-IGy2fS .removeButton-1xB_Ez {
+  margin-left: 16px;
+}
+
 .customizationSectionBorder-2RAJep {
   margin: -16px;
   background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
@@ -570,6 +629,18 @@ body,
 
 .platform-win .bg-1QIAus {
   top: calc((var(--window-title-bar) + 4px) * -1);
+}
+
+.layers-OrUESM {
+  z-index: 1001;
+}
+
+.layer-86YKbF {
+  z-index: 1002;
+}
+
+.pictureInPicture-1GQX91 {
+  z-index: 1002;
 }
 
 .anchor-1MIwyf,
@@ -4985,13 +5056,13 @@ div[role=radiogroup] {
 [aria-checked=true].item-1TA5qI .radioIconForeground-3wH3aU {
   color: currentColor !important;
 }
-.item-1TA5qI.disabled-3tqE8r {
+.item-1TA5qI.disabled-WBmOu_ {
   opacity: 1;
 }
-.item-1TA5qI.disabled-3tqE8r .radioBar-1XgZqD {
+.item-1TA5qI.disabled-WBmOu_ .radioBar-1XgZqD {
   opacity: 0.3;
 }
-.item-1TA5qI.disabled-3tqE8r .radioBar-1XgZqD:after {
+.item-1TA5qI.disabled-WBmOu_ .radioBar-1XgZqD:after {
   display: none;
 }
 
@@ -5547,6 +5618,10 @@ div[role=radiogroup] {
   font-size: var(--tooltip-font-size);
   color: var(--tooltip-text-color);
 }
+.tooltip-33Jwqe .tooltipText-2kLmrq {
+  font-size: var(--tooltip-font-size);
+  color: var(--tooltip-text-color) !important;
+}
 .tooltip-33Jwqe .activityIcon-vfIBet {
   color: var(--tooltip-text-color);
 }
@@ -5606,14 +5681,28 @@ div[role=radiogroup] {
 .tooltipPremiumFooterContainer-3Z8jwf {
   border-radius: 14px;
 }
-.reactionTooltip-3IOBwg {
+.reactionTooltip-1qrpUf {
+  padding: 8px;
   background-color: var(--tooltip-color);
   border-radius: var(--tooltip-radius);
   box-shadow: var(--tooltip-shadow);
   font-size: var(--tooltip-font-size);
   color: var(--tooltip-text-color);
 }
+.reactionTooltip-1qrpUf .reactionTooltipText-277c-U {
+  color: inherit;
+}
 
+.burstReactionTooltipMessage-2cBIrF {
+  border-bottom-color: var(--text-disabled);
+}
+
+.burstReactionTooltipPrompt-1I2XvT {
+  margin: 8px 0 0;
+}
+.burstReactionTooltipPrompt-1I2XvT .reactionTooltipText-277c-U {
+  margin-left: 0;
+}
 /*
  *
  *	TOASTS
@@ -12551,47 +12640,6 @@ body:active .menu-KSaHL1:not(:active) {
   width: auto;
 }
 
-/* USER SETTINGS -> ANIMATION */
-.theme-dark .standardSidebarView-E9Pc3j,
-.theme-light .standardSidebarView-E9Pc3j {
-  backface-visibility: hidden;
-}
-
-.layer-86YKbF {
-  transform: none !important;
-  transition: 300ms var(--default-animation) all;
-  backface-visibility: hidden;
-}
-.animating.layer-86YKbF {
-  pointer-events: initial !important;
-  will-change: transform, opacity;
-}
-.layer-86YKbF + .layer-86YKbF {
-  transform: scale(1.1) !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-  transition: 300ms var(--default-animation) all, 150ms ease opacity;
-}
-.layer-86YKbF.animating-1rIrGV {
-  transform: none !important;
-}
-.stop-animations.layer-86YKbF:first-of-type {
-  transform: scale(0.95) !important;
-  opacity: 0 !important;
-}
-.stop-animations.layer-86YKbF ~ .layer-86YKbF {
-  pointer-events: initial !important;
-  transform: none !important;
-  opacity: 1 !important;
-  animation: opensettings 300ms var(--default-animation);
-}
-
-@keyframes opensettings {
-  0% {
-    transform: scale(1.1);
-    opacity: 0;
-  }
-}
 /*
  *
  *  SERVER AUDIT LOG
@@ -15301,4 +15349,63 @@ body:active .menu-KSaHL1:not(:active) {
 }
 #app-mount .guilds-2JjMmN [class*=folder] {
   background: transparent;
+}
+
+/*
+ *
+ *	DISCORD SHOP
+ *
+ */
+.shop-3sIaH8 {
+  background: var(--bg-overlay-2);
+}
+
+.page-LilLhg {
+  gap: 40px;
+}
+.page-LilLhg > div:nth-child(3) {
+  display: grid;
+  gap: inherit;
+}
+
+.heroBanner-15dNeS,
+.bannerBackground-HeU8g7,
+.bannerCard-2LJzbg {
+  border-radius: var(--card-radius-big);
+}
+
+.bannerCard-2LJzbg {
+  margin-top: 0;
+}
+
+.shopBanner-PEO5bV {
+  margin-top: 0;
+  border-radius: var(--card-radius-big);
+  outline: none;
+}
+
+.shopCard-H3oN50 {
+  border-radius: var(--card-radius-big);
+  border: none;
+  box-shadow: none !important;
+  transition: var(--default-time) var(--default-animation) background;
+}
+.shopCard-H3oN50:hover {
+  transform: none;
+}
+.shopCard-H3oN50 .previewButtonInner-3Gn0Se {
+  max-width: none;
+  max-height: none;
+}
+
+.modalContent-2LOVNi {
+  padding: 0 !important;
+  border-radius: var(--popout-radius-big) !important;
+}
+.modalContent-2LOVNi::-webkit-scrollbar {
+  --scrollbar-width: 0;
+  --scrollbar-thin-width: 0;
+}
+.modalContent-2LOVNi .collectibleInfoContainer-3uyaC5 {
+  border-radius: var(--popout-radius-big);
 }
