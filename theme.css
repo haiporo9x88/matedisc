@@ -1,8 +1,8 @@
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 2.6.2 */
-/* patch note: fix some bugs but a few issues still exist */
+/*Offical Version 2.6.2a */
+/* patch note: try to fix user settings */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -47,7 +47,6 @@
 @import url('https://haiporo9x88.github.io/nitrotheme/nitrotheme.css');
 @import url('https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/addons/material-you/source.css');
 @import url('https://nyri4.github.io/Discolored/main.css');
-@import url('https://haiporo9x88.github.io/settingsmodal/settingsmodal.css');
 @import url('https://haiporo9x88.github.io/accountdetailsgrid/accountdetailsgrid.css');
 @import url('https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css');
 @import url('https://dablulite.github.io/css-snippets/NoLightInDark/import.css');
