@@ -1,8 +1,8 @@
 /*Inspired by (actually stole) MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 2.6.3 */
-/* patch note: fix all known issues but need to remove settings modal (and maybe unknown bugs still exist) */
+/*Offical Version 2.6.4 */
+/* patch note: re-code user settings profile (no more shit bugs from that one) */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -19,10 +19,10 @@
 * open steam link in app
 * image ultilities
 * game activity toggle
-* enhance code blocks
+* enhance code blocks (will conflict with destiny lfg join/invite copier)
 * edit server & role
 * 2 click to edit
-* destiny lfg join/invite copier (will affect text formatting and make it doesnt work)
+* destiny lfg join/invite copier (will conflict with text formatting and enhance code blocks)
 * bug report helper
 * better role color & nsfw tag & search page & formatting redux & media player & audio player
 * activity icons
@@ -343,155 +343,6 @@
     border-radius: 50%;
     border-style: dashed double none dotted;
 }
-/* user settings profiles */
-
-.customizationSection-IGy2fS {
-  --input-color: var(--input-color-alt);
-  margin-bottom: 16px;
-  border: none;
-  padding-top: 15px;
-  border-radius: 15px;
-}
-.customizationSection-IGy2fS .title-1HgbhV {
-  margin-left: 20px;
-  background-color: transparent;
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-  opacity: 1;
-}
-.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
-  height: 820px;
-  padding-top: 10px;
-}
-.inputDefault-Ciwd-S {
-  margin: auto;
-  width: 60%;
-  position: relative;
-  padding: 10px;
-}
-.sectionDescription-ol6C7B{
-  margin-left: 20px;
-}
-
-.lookFilled-1H2Jvj.colorBrand-2M3O3N{
-  margin-left: 30%;
-}
-.sectionContainer-3y2cvf {
-  margin-left: 40%;
-}
-.tabBar-11FwuO .tabBarItem-MeqDhW {
-  border-bottom: none;
-}
-.tabBar-11FwuO .tabBarItem-MeqDhW.selected-g-kMVV {
-  position: relative;
-  background-color: transparent !important;
-  border: none;
-}
-.tabBar-11FwuO .tabBarItem-MeqDhW.selected-g-kMVV:after {
-  position: absolute;
-  content: " ";
-  width: 90%;
-  height: 3px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  background: var(--tab-border-color);
-  border-radius: 3px 3px 0 0;
-  transition: var(--default-time) ease all;
-}
-
-.baseLayout-1_9QRm {
-  gap: 16px;
-}
-
-.notice-1Qe0b_ {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
-.upsellOverlayContainer-3NMgTS,
-.upsellTextContainer-2_9JSn {
-  border-radius: var(--card-radius-big);
-}
-
-.upsellOverlayContainer-3NMgTS {
-  overflow: hidden;
-}
-
-.customizationSectionBorder-2RAJep {
-  margin: -16px;
-  background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-radius: var(--card-radius-big);
-}
-.customizationSectionBorder-2RAJep .background-yH6t2p {
-  padding: 16px;
-}
-.customizationSectionBorder-2RAJep .nitroWheel-21E85D {
-  height: 22px;
-}
-
-.bioTextArea-dDGOeC {
-  --input-padding: 0 12px;
-  height: 136px !important;
-  max-height: 136px !important;
-  padding: var(--input-padding) !important;
-  background: var(--bg-overlay-2) !important;
-  border: none;
-  border-radius: 15px !important;  
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.characterCount-8yNPfb {
-  margin-right: 12px;
-}
-.bioTextArea-dDGOeC .textAreaWithoutAttachmentButton-1as0NS {
-  padding: 12px 0;
-}
-
-.profileBannerPreview-3mLIdO {
-  background: var(--bg-overlay-4);
-  border-radius: var(--popout-radius-big);
-  box-shadow: var(--shadow-3dp);
-}
-.profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2 {
-  background-color: transparent;
-  border: none;
-  box-shadow: var(--shadow-3dp);
-}
-.profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2:focus-within .avatarUploaderHint-2ZdBlc, .profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2:hover .avatarUploaderHint-2ZdBlc {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-.decorationGridItem-3J_11G {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-  transition: var(--default-time) var(--default-animation) background-color;
-}
-.decorationGridItem-3J_11G:hover {
-  background-color: var(--card-color-hover);
-}
-
-.decorationPreview-273BXH {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-}
-
-.smallDecorationPreviewsContainer-2R9zvq {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
 /* Search category */
 .container-2McqkF {
   max-height: 80vh;
@@ -12395,11 +12246,6 @@ body:active .menu-KSaHL1:not(:active) {
   margin: 0 auto;
 }
 
-.contentColumnDefault-3eyv5o,
-.contentColumnWide-2CgNjO {
-  padding: 60px;
-}
-
 .customHeader-f9DEJ_ {
   padding-top: 0;
 }
@@ -15060,6 +14906,171 @@ body:active .menu-KSaHL1:not(:active) {
 }
 .copy-1hP6AT, 
 .wrapper-3htY7x {
+  border-radius: var(--card-radius-big);
+}
+/* USER SETTINGS PROFILES */
+.tabBar-11FwuO .tabBarItem-MeqDhW {
+  border-bottom: none;
+}
+.tabBar-11FwuO .tabBarItem-MeqDhW.selected-g-kMVV {
+  position: relative;
+  background-color: transparent !important;
+  border: none;
+}
+.tabBar-11FwuO .tabBarItem-MeqDhW.selected-g-kMVV:after {
+  position: absolute;
+  content: " ";
+  width: 90%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  background: var(--tab-border-color);
+  border-radius: 3px 3px 0 0;
+  transition: var(--default-time) ease all;
+}
+
+.baseLayout-1_9QRm {
+  gap: 16px;
+}
+
+.notice-1Qe0b_ {
+  background-color: var(--card-color-outlined);
+  border: 1px solid var(--card-border-color);
+  padding: 8px;
+  border-radius: var(--card-radius-big);
+}
+
+.upsellOverlayContainer-3NMgTS,
+.upsellTextContainer-2_9JSn {
+  border-radius: var(--card-radius-big);
+}
+
+.upsellOverlayContainer-3NMgTS {
+  overflow: hidden;
+}
+
+.container-5BK5-N {
+  border-radius: var(--card-radius-big);
+}
+
+.customizationSection-IGy2fS {
+  --input-color: var(--input-color-alt);
+  margin-bottom: 16px;
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS:last-child:not(.withDivider-14SSKx) {
+  padding-bottom: 16px;
+}
+.customizationSection-IGy2fS.hideDivider-eJbzZn {
+  padding-bottom: 16px;
+}
+.customizationSection-IGy2fS.preview-sMYs9f {
+  max-width: unset;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT {
+  margin: 0 0 16px;
+  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
+  border-width: 2px;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
+  display: none;
+}
+.customizationSection-IGy2fS.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
+  background-color: var(--card-color-outlined);
+  border: 1px solid var(--card-border-color);
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+.customizationSection-IGy2fS.preview-Z55SA3 .title-1HgbhV {
+  display: none;
+}
+.customizationSection-IGy2fS .title-1HgbhV {
+  margin: -16px -16px 0;
+  margin-bottom: 0;
+  padding: 16px;
+  background-color: transparent;
+  font-size: 1.25em;
+  line-height: normal;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+  opacity: 1;
+}
+.customizationSection-IGy2fS .title-1HgbhV .titleText-1IEWzs {
+  line-height: normal;
+  font-size: inherit;
+  color: var(--card-header-text-color);
+  font-weight: 400;
+}
+.customizationSection-IGy2fS .removeButton-1xB_Ez {
+  margin-left: 16px;
+}
+
+.customizationSectionBorder-2RAJep {
+  margin: -16px;
+  background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
+  border-radius: var(--card-radius-big);
+}
+.customizationSectionBorder-2RAJep .background-yH6t2p {
+  padding: 16px;
+}
+.customizationSectionBorder-2RAJep .nitroWheel-21E85D {
+  height: 22px;
+}
+
+.bioTextArea-dDGOeC {
+  --input-padding: 0 12px;
+  height: 136px !important;
+  max-height: 136px !important;
+  padding: var(--input-padding) !important;
+  background: var(--bg-overlay-1) !important;
+  border: none;
+  border-radius: 19px !important;
+}
+.bioTextArea-dDGOeC .textAreaWithoutAttachmentButton-1as0NS {
+  padding: 12px 0;
+}
+
+.profileBannerPreview-3mLIdO {
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius-big);
+  box-shadow: var(--shadow-3dp);
+}
+.profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2 {
+  background-color: transparent;
+  border: none;
+  box-shadow: var(--shadow-3dp);
+}
+.profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2:focus-within .avatarUploaderHint-2ZdBlc, .profileBannerPreview-3mLIdO .avatarUploaderInner-p38nm2:hover .avatarUploaderHint-2ZdBlc {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.decorationGridItem-3J_11G {
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 0;
+  border-radius: var(--card-radius-big);
+  transition: var(--default-time) var(--default-animation) background-color;
+}
+.decorationGridItem-3J_11G:hover {
+  background-color: var(--card-color-hover);
+}
+
+.decorationPreview-273BXH {
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 0;
+  border-radius: var(--card-radius-big);
+}
+
+.smallDecorationPreviewsContainer-2R9zvq {
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 8px;
   border-radius: var(--card-radius-big);
 }
 
