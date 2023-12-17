@@ -1,7 +1,7 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 3.0.1 */
+/*Offical Version 3.0.2 */
 /* patch note: add/update more things */
 
 
@@ -16108,6 +16108,10 @@ body:active .menu-KSaHL1:not(:active) {
 .assetsLargeImage_b88a59.assetsLargeImageSpotify__06348,
 .coverWrapper_YAplwJ {
   animation: spin 6s linear infinite;
+}
+/* user settings button spin */
+.button__4f306[aria-label="User Settings"]:hover svg {
+   animation: spin 3s linear infinite;
 }
 @keyframes spin {
   from {
