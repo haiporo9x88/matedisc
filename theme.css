@@ -1,8 +1,8 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 3.0.2 */
-/* patch note: add/update more things */
+/*Offical Version 3.0.3 */
+/* patch note: fix/change something */
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -1100,10 +1100,6 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
   border-top-right-radius: 0;
 }
 
-.chatContent__5dca8 {
-  background: transparent !important;
-}
-
 .chatHeaderBar__28ee6 {
   background-color: var(--chat-color);
 }
@@ -1343,10 +1339,7 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
   background-color: var(--chat-color);
 }
 .wrapper_bd2abe .callContainer_cbde45 {
-  border-radius: var(--card-radius-big) 0 0 var(--card-radius-big);
-}
-.wrapper_bd2abe.chatSidebarOpen_dfaa6a .callContainer_cbde45 {
-  border-radius: var(--card-radius-big);
+  background: var(--bg-overlay-2);
 }
 
 .content__1a4fe:before {
@@ -2060,55 +2053,6 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
 }
 .banner_f13f1e .iconCircle_de71da .nextIcon__4e2df polygon {
   fill: var(--accent-text-color--material-you);
-}
-
-/*
- *
- *  THREAD
- *
- */
-.resizeHandle_f1a098 {
-  background: var(--main-alt);
-}
-
-.container_def45c {
-  background-color: var(--chat-color);
-  border-radius: var(--card-radius-big) var(--card-radius-big) 0;
-}
-.container_def45c.floating_f021e2 {
-  filter: drop-shadow(-8px 0 10px hsl(var(--black-500-hsl)/0.125));
-}
-
-.chatHeaderBar_c1df53 {
-  background-color: var(--chat-color);
-  border-bottom: 1px solid var(--card-border-color);
-}
-
-.scrollerInner__361c8 {
-  margin-bottom: 16px;
-}
-.scrollerInner__361c8 .wrapper__09ecc.cozy_f5c119:not(.message__80c10) .avatar__08316 {
-  left: -52px;
-}
-
-.channelTextArea_c27a51 {
-  margin: 0 16px 12px;
-  background-color: transparent;
-}
-.channelTextArea_c27a51 .placeholder_e68c63 {
-  color: var(--input-placeholder-color);
-}
-
-.channelTextAreaInner_c7593c {
-  max-height: 200px;
-  background-color: var(--main-textarea-color);
-  border-radius: var(--main-textarea-radius);
-}
-.channelTextAreaInner_c7593c .inner__9fd0b {
-  padding-left: 16px;
-}
-.channelTextAreaInner_c7593c .buttons_ce5b56 {
-  margin-right: 0;
 }
 
 /*
@@ -4882,33 +4826,21 @@ div[role=radiogroup].group__6ae8b {
   width: var(--scrollbar-width) !important;
   height: var(--scrollbar-width) !important;
 }
-::-webkit-scrollbar-track {
-  margin: 0 !important;
-  background: transparent !important;
-  border-radius: calc(var(--scrollbar-width) / 2) !important;
-}
+
 ::-webkit-scrollbar-track-piece {
   border: 0 solid transparent !important;
   background-color: transparent !important;
   margin: 0;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--scrollbar-color), 0.15) !important;
+  background: linear-gradient(45deg, rgba(97,29,64,1) 0%,rgba(102,43,53,1) 50%, rgba(208,77,37,1) 200%) !important;
   border: 0 solid transparent !important;
   border-radius: calc(var(--scrollbar-width) / 2) !important;
 }
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(var(--scrollbar-color), 0.25) !important;
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: rgba(var(--scrollbar-color), 0.3) !important;
-}
-
 .thin_b1c063::-webkit-scrollbar {
   width: var(--scrollbar-thin-width) !important;
   height: var(--scrollbar-thin-width) !important;
 }
-
 .wrapper_a7e7a8 [class*=scroller]::-webkit-scrollbar {
   width: 0px !important;
 }
