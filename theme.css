@@ -1,8 +1,12 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 3.0.3 */
-/* patch note: fix/change something */
+/*Offical Version 3.0.4 */
+/* Patch Note:
+* Fix discord wordmark
+* fix + adjust stream pop up
+* adjust stream preview + activity in channel + screen share
+*/
 
 
 /* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
@@ -365,11 +369,12 @@ body,
   height: 22px;
 }
 .wordmark__0d178.wordmarkWindows__05c46:before {
-  content: "Quang";
+  content: "Quang ";
   font-weight: 700;
 }
 .wordmark__0d178.wordmarkWindows__05c46:after {
   content: "Là Bố Thằng Trường";
+  font-weight: 500;
 }
 .wordmark__0d178.wordmarkWindows__05c46 svg {
   display: none;
@@ -823,6 +828,11 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
 
 .overlap_c76e16 .avatar__991e2 {
   border-color: var(--main-color);
+}
+
+.container__03857 {
+  background: var(--bg-overlay-5);
+  border-radius: 15px;
 }
 
 /*
@@ -8147,7 +8157,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
  *
  */
 .root_a28985 {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-3) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -8773,7 +8783,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
   height: var(--input-height);
   max-height: var(--input-height);
   padding: var(--input-padding);
-  background-color: var(--input-color);
+  background: var(--bg-overlay-4);
   border-radius: calc(var(--input-height) / 2);
   border: none;
 }
@@ -8782,7 +8792,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
 }
 
 .qualitySettingsContainer__5cacd {
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-4);
   border: none;
   padding: 16px;
   border-radius: var(--card-radius-big);
@@ -8800,7 +8810,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
 }
 
 .container_d7174a {
-  background-color: var(--card-color-filled);
+  background: var(--bg-overlay-4);
   border: none;
   padding: 16px;
   border-radius: var(--card-radius-big);
@@ -11641,8 +11651,9 @@ body:active .recentMentionsPopout__826a9:not(:active) {
  */
 .pictureInPictureVideo_f1081d {
   background-color: var(--popout-color);
-  border-radius: var(--popout-radius-big);
   box-shadow: var(--shadow-3dp);
+  height: 250px;
+  width: 445px;
 }
 
 /*
@@ -11870,7 +11881,7 @@ body:active .menu__5cf7f:not(:active) {
  *
  */
 .streamPreview__1846c {
-  background-color: var(--popout-color) !important;
+  background: var(--bg-overlay-4) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -12218,7 +12229,10 @@ body:active .container__8261a:not(:active) {
 }
 
 .assetsLargeImage_b88a59 {
-  border-radius: var(--card-radius-big);
+  border-radius: 50%;
+}
+.assetsLargeImage_fd49b5 {
+  border-radius: 50%;
 }
 .assetsLargeImage_b88a59.assetsLargeImageSpotify__06348 {
   border-radius: 50%;
