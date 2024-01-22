@@ -1,7 +1,7 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 3.0.5 */
+/*Offical Version 3.0.6 */
 /* Patch Note:
 * fix screen share override with picture-video pop up
 */
@@ -8155,7 +8155,6 @@ body:active .root_a28985 .container__8261a:not(:active) {
  *
  */
 .root_a28985 {
-  background: var(--bg-overlay-3) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
