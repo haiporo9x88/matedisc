@@ -1,12 +1,9 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 3.2.0 */
+/* Offical Version 3.2.1 */
 /* Patch Note:
-* soundboard fix
-* message actions fix
-* css editor change
-* members list change
+* add Fix Mosaic Zoom on Most Images
 */
 
 
@@ -16127,3 +16124,5 @@ body:active .menu-KSaHL1:not(:active) {
     transform: rotate(360deg);
   }
 }
+/* Fix Mosaic Zoom on most Images */
+[class^="imageWrapper_"] img[class^="lazyImg"] { object-fit: contain !important; }
