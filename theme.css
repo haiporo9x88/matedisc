@@ -1,13 +1,13 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/*Offical Version 3.1.0 */
+/* Offical Version 3.1.1 */
 /* Patch Note:
-* fix replying chat window + add Connections Colorizer
+* update,change and fix some elements
 */
 
 
-/* PLUGINS YOU GUYS NEED TO ADD FOR BETTER EXPERIENCE
+/* PLUGINS THAT MAKE MY EXPERIENCE TO A NEXT LEVEL
 * staff tag
 * role mention icon
 * view profile picture
@@ -314,14 +314,6 @@ body,
 
 .platform-win .bg__12180 {
   top: calc((var(--window-title-bar) + 4px) * -1);
-}
-
-.layers_a23c37 {
-  z-index: 1001;
-}
-
-.layer__2efaa {
-  z-index: 1002;
 }
 
 .pictureInPicture__48d51 {
@@ -810,7 +802,8 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
   border-right-color: var(--sidebar-panel-color);
 }
 
-.statusDiv_a4cf67 {
+.statusDiv_a4cf67,
+.subtitle_bba2b7 .overflow__87fe8 {
   margin-bottom: 4px;
 }
 
@@ -4563,18 +4556,18 @@ html:not(.app-focused) .typeWindows__5fa63 .winButton__88672.winButtonMinMax__72
 }
 
 /* INPUTS -> OPTION PILL */
-.optionPill__88565 {
+.optionPill_f86b98 {
   background-color: transparent !important;
   border-radius: 13px;
   border-color: var(--main-textarea-border) !important;
 }
-.optionPill__88565.selectedPill_f3e999 {
+.optionPill_f86b98.selectedPill_f3e999 {
   border-color: hsl(var(--accent-hsl--material-you)) !important;
 }
-.optionPill__88565.erroredPill_dbfa55 {
+.optionPill_f86b98.erroredPill_dbfa55 {
   border-color: hsl(var(--alert-hsl)) !important;
 }
-.optionPill__88565 .optionPillKey_e84f41 {
+.optionPill_f86b98 .optionPillKey_e84f41 {
   background-color: var(--input-pill-color) !important;
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
@@ -4962,7 +4955,7 @@ div[role=radiogroup].group__6ae8b {
 .optionPillBtn_f38b84:after {
   display: none;
 }
-.optionPillBtn_f38b84 .optionPill__88565 {
+.optionPillBtn_f38b84 .optionPill_f86b98 {
   background-color: transparent;
 }
 
@@ -5497,6 +5490,17 @@ div[role=radiogroup].group__6ae8b {
 }
 .burstReactionTooltipPrompt__069e3 .reactionTooltipText_fdeb2f {
   margin-left: 0;
+}
+
+
+/* TOOLTIP -> EMOJI INFO */
+.popoutContainer__7b9a3 {
+  background-color: var(--tooltip-color) !important;
+  border-radius: var(--tooltip-radius);
+  box-shadow: var(--tooltip-shadow) !important;	
+}
+.popoutContainer__7b9a3 .defaultColor__77578, .popoutContainer__7b9a3 .defaultColor__87d87 {
+  color: var(--tooltip-text-color);
 }
 
 /*
@@ -7450,6 +7454,29 @@ body:active .root_a28985 .container__8261a:not(:active) {
   margin-bottom: 0;
 }
 
+
+/*
+ *
+ *	AUTHENTICATION
+ *
+ */
+.listItemContainer_cb9db1 {
+  margin-bottom: 4px;
+  background-color: var(--card-color-filled);
+  border: none;
+  transition: var(--default-time) var(--default-animation) background-color;
+  border-radius: 4px;
+}
+.listItemContainer_cb9db1:first-of-type {
+  border-radius: var(--card-radius-big) var(--card-radius-big) 4px 4px;
+}
+.listItemContainer_cb9db1:nth-of-type(4) {
+  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
+}
+.listItemContainer_cb9db1:hover {
+  background-color: var(--card-color-hover);
+}
+
 /*
  *
  *	AUTHORIZE APP
@@ -9282,7 +9309,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
   border-radius: var(--card-radius-big);
 }
 
-.linkCard_e80341, .container_dabadb {
+.linkCard_e80341, .container_a6c201 {  
   background-color: var(--card-color-outlined) !important;
   border: 1px solid var(--card-border-color) !important;
   padding: 0;
@@ -10297,7 +10324,7 @@ body:active .root_a28985 .container__8261a:not(:active) {
   background-color: var(--main-alt);
 }
 
-.shopScroll-2RzMLg {
+.pageWrapperBackgroundPrimary__74f14 {
   background-color: var(--chat-color);
 }
 
@@ -10305,6 +10332,10 @@ body:active .root_a28985 .container__8261a:not(:active) {
 .bannerBackground_ad3aa1,
 .bannerCard_b27f26 {
   border-radius: var(--card-radius-big);
+}
+
+.heroBanner_e16ab1 {
+  margin-top: 0;
 }
 
 .shopBanner__8d00b {
@@ -10318,33 +10349,38 @@ body:active .root_a28985 .container__8261a:not(:active) {
   font-weight: 500;
 }
 
-.shopCard__112c2 {
+.shopCard_f7822b {
   background: var(--card-color-filled) !important;
   border-radius: var(--card-radius-big);
   border: none;
   box-shadow: none !important;
   transition: var(--default-time) var(--default-animation) background;
 }
-.shopCard__112c2:hover {
+.shopCard_f7822b:hover {
   background: var(--card-color-active) !important;
-  transform: none;
+  top: unset;
 }
-.shopCard__112c2 .text-lg-bold__43fc5 {
+
+.shopCard_f7822b .text-lg-bold__43fc5 {
   font-weight: 400;
   font-size: 24px;
   color: var(--header-primary) !important;
 }
-.shopCard__112c2 .description_fe9f93,
-.shopCard__112c2 .priceTag__6412e {
+.shopCard_f7822b .cardBackground_af6852 {
+  background-color: transparent !important;
+}
+.shopCard_f7822b .description_fe9f93,
+.shopCard_f7822b .priceTag__6412e {
   color: var(--text-normal) !important;
 }
-.shopCard__112c2 .premiumIcon__7552e path {
+.shopCard_f7822b .premiumIcon__7552e path {
   fill: currentColor;
 }
-.shopCard__112c2 .lookFilled__19298.colorBrand_b2253e {
+.shopCard_f7822b .lookFilled__19298.colorBrand_b2253e {
   background: var(--button-background) !important;
 }
-.shopCard__112c2 .previewButtonInner__42555 {
+.shopCard_f7822b .giftButtonInner__4d3b4,
+.shopCard_f7822b .previewButtonInner__42555 {
   max-width: none;
   max-height: none;
 }
