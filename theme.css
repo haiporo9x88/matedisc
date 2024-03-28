@@ -525,7 +525,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   text-transform: none;
 }
 .sidebar_e031be .container_f41675:not(.hasBanner__04337) .header__77c95 {
-  background-color: var(--main-color);
+  background: var(--bg-overlay-2);
 }
 .sidebar_e031be .unread__75c9f {
   font-size: 14px;
