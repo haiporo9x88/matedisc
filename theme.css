@@ -1,7 +1,7 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 4.0.5 */
+/* Offical Version 4.0.6 */
 /* Patch Note:
 * update sth
 */
@@ -16,12 +16,8 @@
 *
 */
 @import url('https://haiporo9x88.github.io/nitrotheme/nitrotheme.css');
-@import url('https://nyri4.github.io/Discolored/main.css');
-@import url('https://dablulite.github.io/css-snippets/BetterFloatingEditor/import.css');
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css");
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
-@import url("https://feorev.github.io/Themes/Discord/PublicSnippets/ConnectionsColorizer.css");
-
 /*
 *
 *
@@ -1931,6 +1927,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
  */
 .form_d8a4a1 {
   margin-top: 0 !important;
+  background-color: var(--chat-color);
 }
 .form_d8a4a1:before {
   display: none;
@@ -3832,10 +3829,6 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   background: hsl(var(--accent-hsl), 0.4);
 }
 
-.scrollerContent_c73942 {
-  background: var(--bg-overlay-2);
-}
-
 /* FORUM POSTS -> THREAD REACTIONS BAR */
 .container__68e43 {
   --button-height: 26px;
@@ -4186,10 +4179,13 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .lookFilled__950dd .defaultColor__77578, .lookFilled__950dd .defaultColor__8610e, .lookFilled__950dd .defaultColor__30336,
 .lookOutlined__014b5 .defaultColor__77578,
 .lookOutlined__014b5 .defaultColor__8610e,
+.lookOutlined__014b5 .defaultColor__30336,
 .lookLink_a2da25 .defaultColor__77578,
 .lookLink_a2da25 .defaultColor__8610e,
+.lookLink_a2da25 .defaultColor__30336,
 .lookInverted_a299dc .defaultColor__77578,
-.lookInverted_a299dc .defaultColor__8610e {
+.lookInverted_a299dc .defaultColor__8610e,
+.lookInverted_a299dc .defaultColor__30336 {
   color: inherit;
 }
 .lookFilled__950dd .loading__41f89,
@@ -10488,6 +10484,7 @@ body:active .root_a28985 .container_f93da8:not(:active) {
 .pageWrapperBackgroundPrimary__36469 {
   background-color: var(--main-color);
 }
+
 .countDownWrapper__60b05 {
   box-shadow: var(--shadow-3dp) !important;
 }
@@ -12177,7 +12174,7 @@ body:active .menu__13d0c:not(:active) {
  *
  */
 .streamPreview__965fa {
-  background: var(--bg-overlay-4) !important;
+  background: var(--popout-color) !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
 }
