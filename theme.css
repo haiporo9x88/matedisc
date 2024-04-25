@@ -1,9 +1,9 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 4.4 */
+/* Offical Version 4.5.0 */
 /* Patch Note:
-* no nitro for me :<
+* change sth and add a good background :>
 */
 
 
@@ -27,7 +27,6 @@
 */
 :root {
   --app-font: "Google Sans";
-  --app-bg: var(--main-alt);
   --accent-hue: 224;
   --accent-saturation: 71%;
   --accent-lightness: 61%;
@@ -92,7 +91,7 @@
 }
 
 .theme-dark {
-  --main-color: hsl(225,8%,9%);
+  --main-color: url("https://i.imgur.com/6HCAqYS.jpeg");
   --main-alt: hsl(220,9%,6%);
   --accent-hsl--material-you: var(--accent-hsl);
   --accent-text-color--material-you: var(--accent-text-color);
@@ -101,8 +100,8 @@
   --status-picker-color: hsl(228,5%,18%);
   --sidebar-panel-color: hsl(228,7%,14%);
   --chat-color: var(--main-color);
-  --message-color: hsl(216,7%,14%);
-  --message-color-hover: hsl(216,7%,18%);
+  --message-color: transparent;
+  --message-color-hover: hsl(216,7%,18%,15%);
   --message-color-alt: hsl(216,7%,13%);
   --attachment-color: hsl(216,7%,9%);
   --typing-color: hsl(225,8.3%,9.4%,0.9);
@@ -124,7 +123,7 @@
   --menu-item-hover: hsl(0,0%,100%,0.075);
   --menu-item-select: hsl(0,0%,100%,0.1);
   --menu-item-select-accent-opacity: 0.3;
-  --menu-item-text-color: hsl(0,0%,100%);
+  --menu-item-text-color: hsl(0,0%,76%);
   --card-color-outlined: transparent;
   --card-color-filled: hsl(225,6%,13%);
   --card-color-hover: hsl(225,6%,16%);
@@ -158,7 +157,7 @@
 }
 
 .theme-light {
-  --main-color: hsl(0,0%,98%);
+  --main-color: url("https://i.imgur.com/6HCAqYS.jpeg");
   --main-alt: hsl(0,0%,91%);
   --accent-hsl--material-you: var(--accent-hsl);
   --accent-text-color--material-you: var(--accent-text-color);
@@ -167,8 +166,8 @@
   --status-picker-color: hsl(180,3%,87%);
   --sidebar-panel-color: hsl(210,5%,93%);
   --chat-color: var(--main-color);
-  --message-color: hsl(210,4%,90%);
-  --message-color-hover: hsl(210,4%,86%);
+  --message-color: transparent;
+  --message-color-hover: hsl(210,4%,86%,15%);
   --message-color-alt: hsl(210,4%,84%);
   --attachment-color: hsl(210,4%,79%);
   --main-textarea-color-alt: hsl(0,0%,98%);
@@ -249,14 +248,14 @@ body,
 
 .bg__12180,
 .container__827e6 {
-  background: var(--app-bg);
+  background: var(--main-color);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  filter: blur(1px);
 }
 
 .bg__12180.theme-dark {
-  background-color: var(--main-alt);
+  background-color: var(--main-color);
 }
 
 .platform-win .bg__12180 {
@@ -1000,9 +999,11 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   width: 100%;
   height: 44px !important;
   margin-bottom: 0 !important;
-  background: var(--status-picker-color) !important;
+  background-color: var(--main-color) !important;
   border-radius: 4px;
   box-sizing: border-box;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 .container_debb33 .avatarWrapper__500a6 {
   flex-grow: 1;
@@ -2773,12 +2774,16 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 #vc-spotify-player {
   margin-bottom: 2px;
   padding: 12px !important;
-  background-color: var(--sidebar-panel-color) !important;
+  background-color: var(--main-color) !important;
   border-radius: 4px;
+  border-top-left-radius: var(--card-radius-big);
+  border-top-right-radius: var(--card-radius-big);
   border-bottom: none !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 #vc-spotify-player #vc-spotify-album-image {
-  border-radius: 50%;
+  border-radius: 50% !important;
   animation: spin 6s linear infinite;
 }
 #vc-spotify-player .track_b31f5a {
@@ -6791,7 +6796,8 @@ div[role=radiogroup].group__6ae8b {
 }
 .wrapper_a62503.groupStart__7b93c {
   position: relative;
-  border-radius: var(--message-radius);
+  border-top-left-radius: var(--message-radius);
+  border-top-right-radius: var(--message-radius);
 }
 .wrapper_a62503.groupStart__7b93c .avatar__08316 {
   width: 40px;
@@ -6915,7 +6921,7 @@ div[role=radiogroup].group__6ae8b {
   padding: var(--message-padding-top) var(--message-padding-side) !important;
 }
 .cozy_f5c119:not(.groupStart__7b93c) {
-  margin-top: calc(var(--message-padding-top) * -1);
+  margin-top: 0px;
   padding: calc(var(--message-padding-top) / 2) var(--message-padding-side) var(--message-padding-top) var(--message-padding-side) !important;
 }
 .cozy_f5c119:not(.groupStart__7b93c) + .divider__01aed:not(.beforeGroup__6532c) {
@@ -16086,7 +16092,7 @@ body:active .menu-KSaHL1:not(:active) {
  *
  */
 .sidebarRegionScroller__8113e {
-  background-color: var(--main-alt);
+  background-color: var(--main-color);
 }
 
 .sidebarRegion__36437 {
@@ -16288,7 +16294,7 @@ body:active .menu-KSaHL1:not(:active) {
  */
 .layer_f7d46a,
 .standardSidebarView__12528 {
-  background-color: var(--main-alt);
+  background-color: var(--main-color);
 }
 
 .contentRegion__08eba {
