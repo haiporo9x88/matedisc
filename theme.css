@@ -1,9 +1,9 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 4.3.1 */
+/* Offical Version 4.4 */
 /* Patch Note:
-* disable settings modal
+* no nitro for me :<
 */
 
 
@@ -15,7 +15,6 @@
 *
 *
 */
-@import url("https://haiporo9x88.github.io/nitrotheme/nitrotheme.css");
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css");
 @import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
 
@@ -1189,7 +1188,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 
 /* CHAT AREA -> PLACEHOLDER */
 .wrapper_c899da, .wrapper__6b7d8 {
-  background: var(--chat-color) !important;
+  background-color: var(--chat-color) !important;
 }
 
 .wrapper_c899da, .wrapper__6b7d8 {
@@ -1376,14 +1375,13 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
  *
  */
 .wrapper__6bf2d {
-  background: var(--bg-overlay-2);
+  background-color: var(--main-color);
   box-shadow: var(--shadow-3dp);
 }
 .wrapper__6bf2d.minimum__7f356 {
   background-color: var(--chat-color);
 }
 .wrapper__6bf2d .callContainer__1477d {
-  background: var(--bg-overlay-2);
   border-radius: var(--card-radius-big) 0 0 var(--card-radius-big);
 }
 
@@ -1630,7 +1628,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 }
 
 .members__573eb, .members__573eb > div {
-  background: var(--main-color);
+  background-color: var(--main-color);
 }
 .members__573eb .container_a48b21 {
   width: 100%;
@@ -2114,10 +2112,10 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
  *
  */
 .resizeHandle_cc9d34 {
-  background: var(--bg-overlay-2);
+  background-color: var(--main-alt);
 }
 .container__694a1 {
-  background: var(--bg-overlay-2);
+  background-color: var(--chat-color);
   border-radius: var(--card-radius-big) var(--card-radius-big) 0;
 }
 .container__694a1.floating__8f631 {
@@ -2264,7 +2262,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   box-shadow: 0 calc(var(--inverted-curve-size) / 2 * -1) 0 0 var(--menu-item-hover);
 }
 .channelTabs-tab.channelTabs-selected {
-  background: var(--main-color) !important;
+  background-color: var(--main-color) !important;
   z-index: 2;
 }
 .channelTabs-tab.channelTabs-selected:before, .channelTabs-tab.channelTabs-selected:after {
@@ -3452,7 +3450,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
  *
  */
 .container_b92032 {
-  background: var(--bg-overlay-2);
+  background-color: var(--chat-color);
 }
 
 .tagsContainer__58760 {
@@ -3667,7 +3665,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .header_b2c494 {
   position: relative;
   min-height: 52px;
-  background: var(--bg-overlay-4);
+  background-color: var(--input-color);
   border-radius: 26px;
   border: none;
 }
@@ -3681,7 +3679,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .matchingPostsRow__6cdb0 {
   margin-top: -24px;
   padding-top: 24px;
-  background: var(--bg-overlay-6);
+  background-color: var(--input-color);
   border-radius: 0 0 24px 24px;
 }
 
@@ -3746,7 +3744,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   margin-right: 94px !important;
 }
 .container_c654d2 .input_f27786.textArea__6e373 {
-  background: var(--bg-overlay-2);
+  background: var(--card-color-filled);
   height: var(--button-height);
   margin: 0;
   padding: var(--input-padding);
@@ -3813,7 +3811,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
  *
  */
 .container__7d004, .container_de2a56 {
-  background: var(--bg-overlay-4);
+  background: var(--card-color-filled);
   border-radius: var(--card-radius-big);
   border: none !important;
 }
@@ -3947,7 +3945,7 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   box-shadow: none;
 }
 .container__26baa.themed_b152d4 {
-  background: var(--main-color);
+  background-color: var(--main-color);
 }
 .container__26baa .followButton_eb1ca8 {
   --button-height: 32px;
@@ -4610,6 +4608,11 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .input_f27786.multiInput-1VARjC, .input_f27786.input-2yCVqe {
   padding: 0;
 }
+.input_f27786:not(.multiInput-1VARjC) .input_f27786 {
+  width: calc(100% + 24px);
+  margin-left: -12px;
+}
+
 .input_f27786::-webkit-input-placeholder {
   font-family: var(--app-font);
   color: var(--input-placeholder-color);
@@ -4620,6 +4623,12 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 }
 .input_f27786.hiddenDiv__5e506 {
   --input-height: 0;
+}
+.container__11918 {
+  margin-right: 6px;
+}
+.container__11918 .separator_dead9f {
+  background-color: var(--input-border-color);
 }
 
 .multiInputLast-35zVz0:before {
@@ -8712,6 +8721,10 @@ body:active .root_a28985 .container_f93da8:not(:active) {
 .root_a28985 .secondaryButton__11400 {
   flex: 0 1 auto;
 }
+.root_a28985 .secondaryButton__11400.colorPrimary_ebe632 {
+  --button-text-color: hsl(var(--accent-hsl--material-you)) !important;
+  --button-action-color: hsl(var(--accent-hsl--material-you));
+}
 .root_a28985 .minorContainer_eee88c {
   flex: 1 1 auto;
   width: auto;
@@ -9007,7 +9020,7 @@ body:active .root_a28985 .container_f93da8:not(:active) {
   height: var(--input-height);
   max-height: var(--input-height);
   padding: var(--input-padding);
-  background: var(--bg-overlay-4);
+  background-color: var(--input-color);
   border-radius: calc(var(--input-height) / 2);
   border: none;
 }
@@ -9016,7 +9029,7 @@ body:active .root_a28985 .container_f93da8:not(:active) {
 }
 
 .qualitySettingsContainer__8f353 {
-  background: var(--bg-overlay-4);
+  background-color: var(--card-color-filled);
   border: none;
   padding: 16px;
   border-radius: var(--card-radius-big);
@@ -9034,7 +9047,7 @@ body:active .root_a28985 .container_f93da8:not(:active) {
 }
 
 .container__21972 {
-  background: var(--bg-overlay-4);
+  background-color: var(--card-color-filled);
   border: none;
   padding: 16px;
   border-radius: var(--card-radius-big);
@@ -12023,7 +12036,7 @@ body:active .recentMentionsPopout__40c54:not(:active) {
  */
 .container__84c26 {
   max-height: 80vh;
-  background: var(--bg-overlay-1) !important;
+  background-color: var(--popout-color)  !important;
   border-radius: var(--popout-radius-big) !important;
   box-shadow: var(--shadow-3dp) !important;
   overflow-y: auto;
@@ -12123,7 +12136,6 @@ body:active .container__84c26:not(:active) {
 
 .categoryList__2f64f {
   top: 57px;
-  background: var(--bg-overlay-4);
 }
 .categoryList__2f64f .scrollerBase_f742b2 {
   --scrollbar-width: 0;
@@ -15329,6 +15341,12 @@ body:active .menu-KSaHL1:not(:active) {
 }
 .accountProfileCard__744d8 .background__4e802 .fieldList__4e6dd .button__581d0:not(:last-child) {
   margin-right: 16px;
+}
+.accountProfileCard__744d8 .badgeList__6b2c7 {
+  height: 32px;
+  padding: 0 8px;
+  background-color: var(--card-color-hover);
+  border-radius: 16px;
 }
 
 .settingsBanner__01382 {
