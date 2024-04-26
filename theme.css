@@ -1,7 +1,7 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 4.5.1 */
+/* Offical Version 4.5.2 */
 /* Patch Note:
 * a sky full of stars :>
 */
@@ -976,9 +976,6 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 60%);
 }
 
-.activityPanel_b73e7a {
-  background: var(--sidebar-panel-color) !important;
-}
 .activityPanel_b73e7a .gameIcon__5f62a {
   border-radius: 50%;
 }
