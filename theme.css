@@ -1,7 +1,7 @@
 /*Inspired (actually stole) by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 4.5.4 */
+/* Offical Version 4.5.5 */
 /* Patch Note:
 * :>
 */
@@ -71,6 +71,7 @@
   --stream-color: hsl(262,47%,40%);
   --xbox-color: hsl(120,77%,27%);
   --tooltip-color: hsl(0,0%,38%,0.9);
+  --tooltip-border-color: hsl(0,0%,51%);
   --tooltip-text-color: hsl(0,0%,87%);
   --tooltip-font-size: 12px;
   --tooltip-padding: 8px;
@@ -811,9 +812,9 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 }
 
 .popout__4c91f {
-  background-color: var(--popout-color);
+  background-color: var(--main-color);
   border-radius: var(--popout-radius-big);
-  box-shadow: var(--shadow-3dp);
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 80%);
 }
 .popout__4c91f .iconWidget__22dfa {
   background-color: var(--card-button-color) !important;
@@ -852,6 +853,12 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .popout__4c91f .setCustomButton__09dbf .text-xs-medium__220aa, .popout__4c91f .setCustomButton__09dbf .text-xs-medium_d3e0f1 {
   color: inherit !important;
   font-size: 16px;
+}
+
+.popout__7a706 {
+  background-color: var(--main-color);
+  border-radius: var(--popout-radius-big);
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 80%);
 }
 
 /*
@@ -2959,6 +2966,9 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 .bd-button .bd-button-content {
   background-image: none !important;
 }
+.bd-button .bd-button-content svg:not([fill]) .fill {
+    fill: currentColor;
+}
 .bd-button .bd-button-content svg[fill] {
   fill: currentColor;
 }
@@ -3225,6 +3235,8 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   --button-height: 22px;
   --button-padding: 0 4px;
   font-size: 0.8em !important;
+  background-color: var(--main-color) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(240, 240, 240, 10%) !important;
 }
 
 /*
@@ -3367,10 +3379,11 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 }
 
 .vc-addon-card {
-  background-color: var(--card-color-filled) !important;
+  background-color: var(--main-color) !important;
   border: none !important;
   padding: 16px;
   border-radius: var(--card-radius-big) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0,70%) !important;
 }
 .vc-addon-card:hover {
   box-shadow: none !important;
@@ -3409,14 +3422,14 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 /* VENCORD SETTINGS -> THEMES */
 .vc-settings-theme-links {
   padding: 12px !important;
-  background-color: var(--input-color);
-  border-radius: 4px 4px 0 0 !important;
+  background-color: var(--main-color) !important;
+  border-radius: var(--card-radius-big) !important;
   border: none !important;
-  box-shadow: inset 0 -1px 0 0 var(--input-border-color);
   line-height: 1.375rem;
   font-size: 1rem;
   color: var(--input-text-color) !important;
   transition: var(--default-time) var(--default-animation) box-shadow;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0,70%) !important;
 }
 .vc-settings-theme-links:focus {
   box-shadow: inset 0 -2px 0 0 hsl(var(--accent-hsl--material-you));
@@ -4264,8 +4277,10 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
   --button-shadow: none;
 }
 .lookFilled__950dd.colorBrand__27d57 {
-  --button-background: hsl(var(--accent-hsl--material-you));
+  --button-background: var(--main-color);
   --button-text-color: var(--accent-text-color--material-you);
+  border-bottom: none !important;
+  box-shadow: inset 0 0 0 100vmax rgb(100, 100, 100, 10%);
 }
 .lookFilled__950dd.colorRed__5a617 {
   --button-background: hsl(var(--alert-hsl));
@@ -4503,10 +4518,11 @@ html:not(.app-focused) .typeWindows_e41dab .winButton_f17fb6.winButtonMinMax_caf
 }
 
 .cardPrimary__1ee6a {
-  background-color: var(--card-color-filled) !important;
+  background-color: var(--main-color) !important;
   border: none !important;
   padding: 16px;
   border-radius: var(--card-radius-big) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0,70%) !important;
 }
 .cardPrimary__1ee6a .icon_bf45a6 {
   padding: 8px;
@@ -5719,6 +5735,30 @@ div[role=radiogroup].group__6ae8b {
 }
 .popoutContainer__66068 .defaultColor__77578, .popoutContainer__66068 .defaultColor__8610e, .popoutContainer__66068 .defaultColor__30336 {
   color: var(--tooltip-text-color);
+}
+
+.emojiSection_ab054b {
+  padding: 16px 16px 8px;
+}
+
+.guildSection__15ac6 {
+  position: relative;
+  padding: 8px 16px 16px;
+  background-color: transparent;
+}
+.guildSection__15ac6:before {
+  position: absolute;
+  content: " ";
+  width: calc(100% - 32px);
+  height: 1px;
+  top: 0;
+  left: 16px;
+  background-color: var(--tooltip-border-color);
+}
+.guildSection__15ac6 .guildTitle_e577f7,
+.guildSection__15ac6 .text-xs-normal_ccc5fb,
+.guildSection__15ac6 .text-xs-normal__46d75 {
+  color: var(--tooltip-text-color) !important;
 }
 
 /*
@@ -7165,6 +7205,59 @@ div[role=radiogroup].group__6ae8b {
   height: 100%;
   top: 0;
   right: 0;
+}
+
+/*
+ *
+ *	MESSAGE POLLS
+ *
+ */
+.container__0bd59 {
+  background-color: var(--attachment-color);
+  border-radius: var(--media-radius);
+}
+.container__0bd59 .answersContainer_d6d472 {
+  padding: 0;
+  background-color: transparent;
+}
+.container__0bd59 .radioBackground__2d774 {
+  fill: hsl(var(--accent-hsl--material-you));
+}
+
+.answer__07489.votedStyles__57019 .answerInner_b97752 {
+  outline-color: hsl(var(--accent-hsl--material-you));
+}
+.answer__07489:not(.votedStyles__57019) .answerInner_b97752 {
+  outline-color: transparent !important;
+}
+
+.answerInner_b97752 {
+  background-color: var(--card-color-filled);
+  border-radius: calc(var(--media-radius) / 1.65);
+}
+.answerInner_b97752.currentlyVoting__54b47:hover {
+  background-color: var(--card-color-hover);
+}
+.answerInner_b97752.currentlyVoting__54b47.selected__93ede {
+  background-color: var(--card-color-active);
+}
+.answerInner_b97752.currentlyVoting__54b47.selected__93ede circle,
+.answerInner_b97752.currentlyVoting__54b47.selected__93ede path {
+  fill: hsl(var(--accent-hsl--material-you));
+}
+.answerInner_b97752.currentlyVoting__54b47 path {
+  fill: var(--text-normal);
+}
+
+.votePercentageBar_ba9103 {
+  background-color: hsl(from hsl(var(--accent-hsl--material-you)) h calc(s * 1.5) l/0.25);
+}
+
+.answerSelectionIcon__262f4 circle {
+  fill: var(--accent-text-color--material-you);
+}
+.answerSelectionIcon__262f4 path {
+  fill: hsl(var(--accent-hsl--material-you));
 }
 
 /*
@@ -13603,6 +13696,49 @@ body:active .menu-KSaHL1:not(:active) {
   border-radius: 10px;
 }
 
+.notice_b28daf {
+  background-color: var(--card-color-filled);
+  border: none;
+  padding: 16px;
+  border-radius: var(--card-radius-big);
+}
+
+.review_e04a14 {
+  padding: 16px;
+  background-color: var(--card-color-filled);
+  border-radius: var(--card-radius-big) var(--card-radius-big) 0 0;
+}
+
+.onboardingStepContainer__03a55 {
+  position: relative;
+  background-color: var(--card-color-filled);
+}
+.onboardingStepContainer__03a55:after {
+  position: absolute;
+  content: " ";
+  width: calc(100% - 32px);
+  height: 1px;
+  bottom: 0;
+  left: 16px;
+  background-color: var(--card-border-color);
+}
+.onboardingStepContainer__03a55:last-of-type {
+  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
+}
+.onboardingStepContainer__03a55:last-of-type:after {
+  display: none;
+}
+.onboardingStepContainer__03a55 .iconContainer_c175e1 {
+  background-color: var(--card-color-active);
+}
+.onboardingStepContainer__03a55 .lookOutlined__014b5.colorPrimary_ebe632 {
+  border: var(--button-outline) !important;
+}
+
+.divider__0443b {
+  display: none;
+}
+
 /* SERVER COMMUNITY ONBOARDING -> DEFAULT CHANNELS */
 .categoryRow_b920fb .categoryText__4e543 {
   font-size: 14px;
@@ -14552,6 +14688,10 @@ body:active .menu-KSaHL1:not(:active) {
   border: 1px solid var(--card-border-color);
   padding: 0;
   border-radius: var(--card-radius-big);
+}
+
+.background__092a0 {
+  color: var(--main-alt) !important;
 }
 
 /*
@@ -16697,6 +16837,7 @@ body:active .menu-KSaHL1:not(:active) {
     transform: rotate(360deg);
   }
 }
+
 /*
 *
 *
