@@ -14,11 +14,11 @@ https://haiporo9x88.github.io/matedisc/theme.css
 
 ## Previews
 
-(Previews are subject to be out of date)
+(Previews are subject to be out of date, but i will update those after each big change)
 
 #### Main chat area
 
-![[discord-preview1](https://i.imgur.com/Ymt6eLk.jpeg)
+![discord-preview1](https://i.imgur.com/Ymt6eLk.jpeg)
 
 #### User settings
 
