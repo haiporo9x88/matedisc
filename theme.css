@@ -1,7 +1,7 @@
 /*Inspired by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 5.1.1 */
+/* Offical Version 5.1.1.1 */
 /* Patch Note:
 * fix my stupid things
 */
@@ -67,7 +67,7 @@
   --emoji-category-header: hsl(from var(--popout-color) h s l / 0.95);
   --popout-radius: var(--card-radius);
   --popout-radius-big: var(--card-radius-big);
-  --avatar-radius: 24%;
+  --avatar-radius: 50%;
   --channel-radius: 21px;
   --spotify-color: hsl(141,73%,42%);
   --stream-color: hsl(262,47%,40%);
