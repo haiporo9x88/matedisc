@@ -1,9 +1,9 @@
 /*Inspired by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Offical Version 5.1.0 */
+/* Offical Version 5.1.1 */
 /* Patch Note:
-* discord sucks
+* fix my stupid things
 */
 
 
@@ -9650,7 +9650,7 @@ body:active .root_f9a4c9 .container_e664f3:not(:active) {
 
 .icon_f1cdcc {
   padding: 0;
-
+}
 .icon_f1cdcc .contents_dd4f85 {
   min-height: var(--button-height);
   min-width: var(--button-height);
@@ -9692,7 +9692,7 @@ body:active .root_f9a4c9 .container_e664f3:not(:active) {
 .fullSizeOverlayBackground_c69a7b {
   border-radius: calc(var(--popout-radius-big) / 1.75);
   border: none;
-  
+}
 /* USER PROFILE -> CONNECTED ACCOUNTS */
 .connectedAccounts_f3eb60 {
   margin-top: -16px;
@@ -13046,7 +13046,7 @@ body:active .container_e664f3:not(:active) {
 }
 .biteSizeInnerThemed_c69a7b:before {
   border-radius: calc(var(--popout-radius-big) / 1.25);
-
+}
 .inner_f867f9 {
   border-radius: var(--popout-radius-big);
 }
@@ -13093,7 +13093,7 @@ body:active .container_e664f3:not(:active) {
   background-color: var(--card-color-filled) !important;
   border-radius: 12px;
   border: none;
-
+}
 /* USER POPOUT -> ACTIVITY */
 .activity_cd74cc {
   background-color: var(--popout-color-alt);
