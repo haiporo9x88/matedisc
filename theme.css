@@ -1,7 +1,7 @@
 /*Inspired by MaterialDiscord theme from CapnKitten#3192*/
 /*Source: https://github.com/CapnKitten/BetterDiscord/tree/master/Themes/Material-Discord */
 
-/* Version 5.5.0 */
+/* Version 5.5.1 */
 
 /*
 *
@@ -1194,7 +1194,8 @@ html:not(.app-focused) .typeWindows_a934d8 .winButton_a934d8.winButtonMinMax_a93
 .searchBar_f0963d .searchBarComponent_f0963d {
   height: 32px;
   padding: 0 10px;
-  background-color: var(--input-color);
+  background-color: var(--main-color) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 35%);
   border-radius: 16px;
 }
 
@@ -5017,7 +5018,8 @@ html:not(.app-focused) .typeWindows_a934d8 .winButton_a934d8.winButtonMinMax_a93
 .container_c18ec9 {
   --input-padding: 0 6px 0 12px;
   height: var(--input-height);
-  background-color: var(--input-color);
+  background-color: var(--main-color) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 35%);
   border-radius: var(--input-radius);
 }
 .container_c18ec9 .inner_c18ec9 {
@@ -6058,6 +6060,13 @@ div[role=radiogroup].group_d25d19 {
  *	ACTIVITY LIST
  *
  */
+.itemCard_f02fcf,
+.body_cd82a7,
+.section_cd82a7 {
+  background-color: var(--main-color) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 15%);
+}
+
 .nowPlayingColumn_c2739c {
   background-color: var(--main-color);
 }
@@ -12030,7 +12039,8 @@ body:active .drawerSizingWrapper_af5dbb:not(:active) {
 .container_effbe2 {
   --input-height: 32px;
   --input-padding: 0 6px 0 12px;
-  background-color: var(--input-color);
+  background-color: var(--main-color) !important;
+  box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, 35%);
   border-radius: var(--input-radius);
 }
 .container_effbe2 .inner_effbe2 {
@@ -16992,7 +17002,7 @@ body:active .container_e664f3:not(:active) {
   height: calc(60px + var(--input-height));
   top: var(--app-title-bar-height);
   margin-bottom: 0 !important;
-  background-color: var(--main-alt);
+  background-color: var(--main-color);
   z-index: 4;
 }
 .sidebar_c25c6d .side_a0 > div:not([class])[style="margin-bottom: 8px;"] + .header_a0 {
